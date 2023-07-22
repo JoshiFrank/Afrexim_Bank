@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"To test the forgot password functionality","To validate the forgot password functionality with valid and invalid credentials.","SUCCESS","2023-07-19T14:23:12.845+05:30[Asia/Calcutta]","0.0","101.8"
+"To Test the Our Bank Option in the home page","To validate the About Us functionality","SUCCESS","2023-07-19T14:24:54.711+05:30[Asia/Calcutta]","0.0","35.69"
+"To test the Products and Services functionality","To validate the Who we serve- Large corporates","SUCCESS","2023-07-19T14:28:15.574+05:30[Asia/Calcutta]","0.0","30.86"
+"To test the Afrexim Bank server","To verify the login functionality","SUCCESS","2023-07-19T14:28:47.779+05:30[Asia/Calcutta]","0.0","23.1"
+"To verify the need help functionality","To test the need help functionality","SUCCESS","2023-07-19T14:30:32.662+05:30[Asia/Calcutta]","0.0","43.45"
+"To validate the Functionality of Investers Option in Afrexim Bank","To Test the Investers Option in Afrexim Bank","SUCCESS","2023-07-19T14:31:16.141+05:30[Asia/Calcutta]","0.0","37.79"

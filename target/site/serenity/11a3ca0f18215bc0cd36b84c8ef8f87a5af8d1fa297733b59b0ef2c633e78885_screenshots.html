@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Afrexim Bank</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="528de21269b31fdc420ec6438875c37956886984050dc13aa2d2ee2f1c85b545.html">To Validate The Signup Functionality Of Afrexim Page</a></span>
+                > <span class="truncate-60"><a
+                    href="11a3ca0f18215bc0cd36b84c8ef8f87a5af8d1fa297733b59b0ef2c633e78885.html">To validate the signup functionality </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-07-2023 14:29</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Validate The Signup Functionality Of Afrexim Page</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6a2ed16e398fe40a71e664245f39c41d834392cf9b766c945a6720ec978115ce.html">T003
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">Smoke
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">To validate the signup functionality
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given To open the Afrexim application<br>When To click the Apply for facility option<br>And Click the SignUp link Under the SignIn Box<br>Then System should be Show Contact Person Detaile Page<br>When Select the Salutation<br>And Give the First Name "&lt;firstname&gt;"<br>And Give the last Name "&lt;lastname&gt;"<br>And Enter the Contact Number "&lt;contactnum&gt;"<br>And Enter the Additional Number "&lt;additionalnum&gt;"<br>And Enter The Contact Email "&lt;email&gt;"<br>And Select The Contact Type<br>And Enter The Contact Title "&lt;contacttitle&gt;"<br>And Enter The SignIn User Name "&lt;signin username&gt;"<br>And Give The Password "&lt;give password&gt;"<br>And Give The Confirm Password "&lt;confirm password&gt;"<br>And Enter Organization Legal Name "&lt;organisation legal name&gt;"<br>And Enter Organization Short Name "&lt;organisation short name&gt;"<br>And Select Legal Entity Type<br>And Select Type of Institution<br>And Enter Activities Description "&lt;activities description&gt;"<br>And Select Sector<br>And Select Sub-sector<br>And Select Products of interest<br>And Enter Registration number "&lt;reg number&gt;"<br>And Choose Date<br>And Enter City of incorporation "&lt;city of incorporation&gt;"<br>And Select country of incorporation<br>And Enter Operating Street Address "&lt;operating city address&gt;"<br>And Enter Operating city "&lt;operating city&gt;"<br>And Enter Operating Postal code "&lt;operating postal code&gt;"<br>And Select operating Country<br>And Select initial source of funds<br>And Select number of employees<br>And Select constitution<br>And Enter Website "&lt;enter website&gt;"<br>And Click confirmation box<br>And Click Signup button<br>Then Verify Registration Confirmation page</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Field should be present</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.Afrexim.pages.Afrexim_Signup_pages.Verify_Registration_Confirmation_page(Afrexim_Signup_pages.java:287)<br />com.Afrexim.steps.Afrexim_Signup_steps.verify_registration_confirmation_page(Afrexim_Signup_steps.java:265)<br />✽.Verify Registration Confirmation page(file:///C:/Users/hp/eclipse-workspace/AfreximBank_SerenityBDD_Framework/src/test/resources/Afrexim_features/Afrexim_Signup.feature:44)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource4878006541387705588.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="19bc30654f4998f4168a2113f8d4e45928f14ca935f9285a2bddcad2b3f449f9.png" title=" 1: To validate the signup functionality ({firstname=test1, lastname=test2, contactnum=+9876543210, additionalnum=+9876543222, email=test12@gmai.com, contacttitle=Mr, signin username=tes12@gmail.com, give password=Test12345, confirm password=Test12345, organisation legal name=test company, organisation short name=test com, activities description=test test test, reg number=123456789, city of incorporation=test city, operating city address=test city address, operating city=operating city, operating postal code=city postal code, enter website=www.testwebsite.com})" width="1920"/>
+                <img src="19bc30654f4998f4168a2113f8d4e45928f14ca935f9285a2bddcad2b3f449f9.png" title=" Given To open the Afrexim application" width="1920"/>
+                <img src="19bc30654f4998f4168a2113f8d4e45928f14ca935f9285a2bddcad2b3f449f9.png" title=" When To click the Apply for facility option" width="1920"/>
+                <img src="19bc30654f4998f4168a2113f8d4e45928f14ca935f9285a2bddcad2b3f449f9.png" title=" Click applyfacility" width="1920"/>
+                <img src="9857aafb41216484dfe4faf047dea54ef8bf2a79a20276e7a1ecaa7016b22ca1.png" title=" Click applyfacility (completed)" width="1920"/>
+                <img src="9857aafb41216484dfe4faf047dea54ef8bf2a79a20276e7a1ecaa7016b22ca1.png" title=" When To click the Apply for facility option (completed)" width="1920"/>
+                <img src="9857aafb41216484dfe4faf047dea54ef8bf2a79a20276e7a1ecaa7016b22ca1.png" title=" And Click the SignUp link Under the SignIn Box" width="1920"/>
+                <img src="9857aafb41216484dfe4faf047dea54ef8bf2a79a20276e7a1ecaa7016b22ca1.png" title=" Sign up" width="1920"/>
+                <img src="4ed28c9bc8e14b2c43a24a50c9d04c456150ad0fc6594bd460a3511f366143d7.png" title=" Sign up (completed)" width="1920"/>
+                <img src="4ed28c9bc8e14b2c43a24a50c9d04c456150ad0fc6594bd460a3511f366143d7.png" title=" And Click the SignUp link Under the SignIn Box (completed)" width="1920"/>
+                <img src="4ed28c9bc8e14b2c43a24a50c9d04c456150ad0fc6594bd460a3511f366143d7.png" title=" Then System should be Show Contact Person Detaile Page" width="1920"/>
+                <img src="ee76a0b36a8b56f0e2ffe8d33711c75dd91623a3b1cc7b37fbca4d210c0e7e9b.png" title=" Then System should be Show Contact Person Detaile Page (completed)" width="1920"/>
+                <img src="ee76a0b36a8b56f0e2ffe8d33711c75dd91623a3b1cc7b37fbca4d210c0e7e9b.png" title=" When Select the Salutation" width="1920"/>
+                <img src="ee76a0b36a8b56f0e2ffe8d33711c75dd91623a3b1cc7b37fbca4d210c0e7e9b.png" title=" Select the salutation: Dr." width="1920"/>
+                <img src="8b7462e5678a59b50e575ac2500195c87bf262a57082a14efe3efd6248c5ffe6.png" title=" Select the salutation: Dr. (completed)" width="1920"/>
+                <img src="8b7462e5678a59b50e575ac2500195c87bf262a57082a14efe3efd6248c5ffe6.png" title=" When Select the Salutation (completed)" width="1920"/>
+                <img src="8b7462e5678a59b50e575ac2500195c87bf262a57082a14efe3efd6248c5ffe6.png" title=" And Give the First Name &quot;test1&quot;" width="1920"/>
+                <img src="fc03ee34c3f4f65ce3741b0f29a7e5293a58c60d7445089a85e5e9f12a9dc6e4.png" title=" Give the first name: test1" width="1920"/>
+                <img src="7f3d121eb2f26537aaf61204c0b71d5305f6af5c81cc6976d1c7c9ca06d77496.png" title=" Give the first name: test1 (completed)" width="1920"/>
+                <img src="7f3d121eb2f26537aaf61204c0b71d5305f6af5c81cc6976d1c7c9ca06d77496.png" title=" And Give the First Name &quot;test1&quot; (completed)" width="1920"/>
+                <img src="7f3d121eb2f26537aaf61204c0b71d5305f6af5c81cc6976d1c7c9ca06d77496.png" title=" And Give the last Name &quot;test2&quot;" width="1920"/>
+                <img src="e9a3b07f76a3a2e2e26970e788c6d61fcd403736030bf825566acd44eecf0258.png" title=" Give the last name: test2" width="1920"/>
+                <img src="a0e2567034f619f70fc4e59f9c0833ba7f7d61e1831144754a9c33c2b6fbe232.png" title=" Give the last name: test2 (completed)" width="1920"/>
+                <img src="a0e2567034f619f70fc4e59f9c0833ba7f7d61e1831144754a9c33c2b6fbe232.png" title=" And Give the last Name &quot;test2&quot; (completed)" width="1920"/>
+                <img src="a0e2567034f619f70fc4e59f9c0833ba7f7d61e1831144754a9c33c2b6fbe232.png" title=" And Enter the Contact Number &quot;+9876543210&quot;" width="1920"/>
+                <img src="4cba89c2e7f6b7b9d2aad451c2c3899848c04422a476074aacbfae2efcc6a475.png" title=" Enter the contact number: +9876543210" width="1920"/>
+                <img src="b3e496a2b6a251742518cbb35518213d538dda0b1ba19184c87fdfbf934f5f4e.png" title=" Enter the contact number: +9876543210 (completed)" width="1920"/>
+                <img src="b3e496a2b6a251742518cbb35518213d538dda0b1ba19184c87fdfbf934f5f4e.png" title=" And Enter the Contact Number &quot;+9876543210&quot; (completed)" width="1920"/>
+                <img src="b3e496a2b6a251742518cbb35518213d538dda0b1ba19184c87fdfbf934f5f4e.png" title=" And Enter the Additional Number &quot;+9876543222&quot;" width="1920"/>
+                <img src="3c5cf5a1ad46a51e7c729a7d337c3688f244132ad6e9d514c946cb260d8df58c.png" title=" Enter additional contact: +9876543222" width="1920"/>
+                <img src="edc737a01f0d3db1d5f887e3622989370bbfe484c761405daf5e3c41f0adb9b0.png" title=" Enter additional contact: +9876543222 (completed)" width="1920"/>
+                <img src="edc737a01f0d3db1d5f887e3622989370bbfe484c761405daf5e3c41f0adb9b0.png" title=" And Enter the Additional Number &quot;+9876543222&quot; (completed)" width="1920"/>
+                <img src="edc737a01f0d3db1d5f887e3622989370bbfe484c761405daf5e3c41f0adb9b0.png" title=" And Enter The Contact Email &quot;test12@gmai.com&quot;" width="1920"/>
+                <img src="f5ed32e4e607fe4b0df3b93c42c9dba3e41d41e24c2e34e2a541d8f5e407b95d.png" title=" Enter email address: test12@gmai.com" width="1920"/>
+                <img src="04c0acf80e8abcb451a46949ad4d6ce5782d1d6dcff6ed4364d5609a384ebbb2.png" title=" Enter email address: test12@gmai.com (completed)" width="1920"/>
+                <img src="04c0acf80e8abcb451a46949ad4d6ce5782d1d6dcff6ed4364d5609a384ebbb2.png" title=" And Enter The Contact Email &quot;test12@gmai.com&quot; (completed)" width="1920"/>
+                <img src="04c0acf80e8abcb451a46949ad4d6ce5782d1d6dcff6ed4364d5609a384ebbb2.png" title=" And Select The Contact Type" width="1920"/>
+                <img src="489b6f4e5f1351b4764f27650d7142e49f359e070b7687f471c21c986d09c1c4.png" title=" Enter contact type: 1" width="1920"/>
+                <img src="800584c791d22b958272c7d74b247fce49011649f730c14a57d67cefa43d6d7d.png" title=" Enter contact type: 1 (completed)" width="1920"/>
+                <img src="800584c791d22b958272c7d74b247fce49011649f730c14a57d67cefa43d6d7d.png" title=" And Select The Contact Type (completed)" width="1920"/>
+                <img src="800584c791d22b958272c7d74b247fce49011649f730c14a57d67cefa43d6d7d.png" title=" And Enter The Contact Title &quot;Mr&quot;" width="1920"/>
+                <img src="800584c791d22b958272c7d74b247fce49011649f730c14a57d67cefa43d6d7d.png" title=" Enter contact title: Mr" width="1920"/>
+                <img src="255c88e192be7a628c5e3c26dc0b84c980b59e381171767fa3746ef1570fa830.png" title=" Enter contact title: Mr (completed)" width="1920"/>
+                <img src="255c88e192be7a628c5e3c26dc0b84c980b59e381171767fa3746ef1570fa830.png" title=" And Enter The Contact Title &quot;Mr&quot; (completed)" width="1920"/>
+                <img src="255c88e192be7a628c5e3c26dc0b84c980b59e381171767fa3746ef1570fa830.png" title=" And Enter The SignIn User Name &quot;tes12@gmail.com&quot;" width="1920"/>
+                <img src="a85c1b0505b6d71cf03efded1d44d9d5c63dae4ad4cc72dbe3f39cbce484c76d.png" title=" And Enter The SignIn User Name &quot;tes12@gmail.com&quot; (completed)" width="1920"/>
+                <img src="a85c1b0505b6d71cf03efded1d44d9d5c63dae4ad4cc72dbe3f39cbce484c76d.png" title=" And Give The Password &quot;Test12345&quot;" width="1920"/>
+                <img src="a85c1b0505b6d71cf03efded1d44d9d5c63dae4ad4cc72dbe3f39cbce484c76d.png" title=" Give password: Test12345" width="1920"/>
+                <img src="e5c96d120991878c109d45c3253812f5ba08fd21872e5fa52e54049a07def319.png" title=" Give password: Test12345 (completed)" width="1920"/>
+                <img src="e5c96d120991878c109d45c3253812f5ba08fd21872e5fa52e54049a07def319.png" title=" And Give The Password &quot;Test12345&quot; (completed)" width="1920"/>
+                <img src="e5c96d120991878c109d45c3253812f5ba08fd21872e5fa52e54049a07def319.png" title=" And Give The Confirm Password &quot;Test12345&quot;" width="1920"/>
+                <img src="7b0773bfec7a23bb4005a8fafac3401e93aed0eb240764ff84fadf4957593773.png" title=" Give confirm password: Test12345" width="1920"/>
+                <img src="37087b74650cc801222ed58129f4f41f8e788c92939163315228fb821b683a4f.png" title=" Give confirm password: Test12345 (completed)" width="1920"/>
+                <img src="37087b74650cc801222ed58129f4f41f8e788c92939163315228fb821b683a4f.png" title=" And Give The Confirm Password &quot;Test12345&quot; (completed)" width="1920"/>
+                <img src="37087b74650cc801222ed58129f4f41f8e788c92939163315228fb821b683a4f.png" title=" And Enter Organization Legal Name &quot;test company&quot;" width="1920"/>
+                <img src="df23aed37df8d15a1b687444b407ba37c4def700a1600bcbc5816b8b896f8438.png" title=" Give organisation legalname: test company" width="1920"/>
+                <img src="157518dc648ce46d434dedcef46809b98bb4f0e6896fbda8374d092fcd656791.png" title=" Give organisation legalname: test company (completed)" width="1920"/>
+                <img src="157518dc648ce46d434dedcef46809b98bb4f0e6896fbda8374d092fcd656791.png" title=" And Enter Organization Legal Name &quot;test company&quot; (completed)" width="1920"/>
+                <img src="157518dc648ce46d434dedcef46809b98bb4f0e6896fbda8374d092fcd656791.png" title=" And Enter Organization Short Name &quot;test com&quot;" width="1920"/>
+                <img src="0d7bdc33d27e660dd1f482b8d112c7720d32c407dbca9668d42fe5cee1e25c18.png" title=" Give organisation shortname: test com" width="1920"/>
+                <img src="1fc8538c3be2f1399bd14f66ef659227dcb29651320057ed68b32a46ec67cd87.png" title=" Give organisation shortname: test com (completed)" width="1920"/>
+                <img src="1fc8538c3be2f1399bd14f66ef659227dcb29651320057ed68b32a46ec67cd87.png" title=" And Enter Organization Short Name &quot;test com&quot; (completed)" width="1920"/>
+                <img src="1fc8538c3be2f1399bd14f66ef659227dcb29651320057ed68b32a46ec67cd87.png" title=" And Select Legal Entity Type" width="1920"/>
+                <img src="a31541748388414a71b1718c7e2776e62db18887e78890d7f0ce8436379a3cf4.png" title=" Select legal entity: 1" width="1920"/>
+                <img src="304237935906498ba460ebebeb8eb8910ef85610f77af05b736b1ffb0ac6ce37.png" title=" And Select Legal Entity Type" width="1920"/>
+                <img src="304237935906498ba460ebebeb8eb8910ef85610f77af05b736b1ffb0ac6ce37.png" title=" Select legal entity: 1 (completed)" width="1920"/>
+                <img src="304237935906498ba460ebebeb8eb8910ef85610f77af05b736b1ffb0ac6ce37.png" title=" And Select Type of Institution" width="1920"/>
+                <img src="304237935906498ba460ebebeb8eb8910ef85610f77af05b736b1ffb0ac6ce37.png" title=" Select typeof institution: 1" width="1920"/>
+                <img src="e99f97e35ace2bff4749a6b52944c1e761230f63d2d9aed40dbad24d0de2df40.png" title=" And Select Type of Institution" width="1920"/>
+                <img src="e99f97e35ace2bff4749a6b52944c1e761230f63d2d9aed40dbad24d0de2df40.png" title=" Select typeof institution: 1 (completed)" width="1920"/>
+                <img src="e99f97e35ace2bff4749a6b52944c1e761230f63d2d9aed40dbad24d0de2df40.png" title=" And Enter Activities Description &quot;test test test&quot;" width="1920"/>
+                <img src="c69bffab91ad99ac121020dd9cd96c2fd5aabfaa7a2a73b6ef5ff5ca67a99af2.png" title=" Enter activities description: test test test" width="1920"/>
+                <img src="558faac754cd0b640eb4f4bd7b6458ba322249df81dc3857fb1a456230f483df.png" title=" Enter activities description: test test test (completed)" width="1920"/>
+                <img src="558faac754cd0b640eb4f4bd7b6458ba322249df81dc3857fb1a456230f483df.png" title=" And Enter Activities Description &quot;test test test&quot; (completed)" width="1920"/>
+                <img src="558faac754cd0b640eb4f4bd7b6458ba322249df81dc3857fb1a456230f483df.png" title=" And Select Sector" width="1920"/>
+                <img src="e51049058b46574a5a9ed2bed6a93259bcbe460b1d7dba1add4d0bff21b02298.png" title=" Select sector: 1" width="1920"/>
+                <img src="9e7636f7349202d200e7a8644129625529ca9b9993642fab28fdf3206a15391a.png" title=" Select sector: 1 (completed)" width="1920"/>
+                <img src="9e7636f7349202d200e7a8644129625529ca9b9993642fab28fdf3206a15391a.png" title=" And Select Sector (completed)" width="1920"/>
+                <img src="9e7636f7349202d200e7a8644129625529ca9b9993642fab28fdf3206a15391a.png" title=" And Select Sub-sector" width="1920"/>
+                <img src="80a7dffac161faf502c6c03d48ef37edd8806d2db13cbd6476a48d60deabba12.png" title=" Select subsector: 4" width="1920"/>
+                <img src="c8c17b5655c20b02946d65bcf3f9d5af911de4b39a442468b158ffd63ce54bde.png" title=" Select subsector: 4 (completed)" width="1920"/>
+                <img src="c8c17b5655c20b02946d65bcf3f9d5af911de4b39a442468b158ffd63ce54bde.png" title=" And Select Sub-sector (completed)" width="1920"/>
+                <img src="c8c17b5655c20b02946d65bcf3f9d5af911de4b39a442468b158ffd63ce54bde.png" title=" And Select Products of interest" width="1920"/>
+                <img src="12212fb9008ea4b794fca6e43898f83fa1626d8fd26e60fb575716ea8b49a8f1.png" title=" Select productsofinterest: 2" width="1920"/>
+                <img src="ebd8020825f69de95a3572650a3fb354effd616eccd14ea01b3d03f9c5f18cee.png" title=" And Select Products of interest" width="1920"/>
+                <img src="ebd8020825f69de95a3572650a3fb354effd616eccd14ea01b3d03f9c5f18cee.png" title=" Select productsofinterest: 2 (completed)" width="1920"/>
+                <img src="ebd8020825f69de95a3572650a3fb354effd616eccd14ea01b3d03f9c5f18cee.png" title=" And Enter Registration number &quot;123456789&quot;" width="1920"/>
+                <img src="350e0be44eef8c3710280a3297c01cb25e94600e41937eb05f02f870781a0f59.png" title=" Enter reg num: 123456789" width="1920"/>
+                <img src="974ae8983e382c0824dfb266e5e86cac878cc31309c56acb652d4eb8e1399e4f.png" title=" Enter reg num: 123456789 (completed)" width="1920"/>
+                <img src="974ae8983e382c0824dfb266e5e86cac878cc31309c56acb652d4eb8e1399e4f.png" title=" And Enter Registration number &quot;123456789&quot; (completed)" width="1920"/>
+                <img src="974ae8983e382c0824dfb266e5e86cac878cc31309c56acb652d4eb8e1399e4f.png" title=" And Choose Date" width="1920"/>
+                <img src="7404bc74503ccfaaae77b65ded4610de3dced9692dc65c817ec425be9a74146c.png" title=" Choose date: 2, 2000, 20" width="1920"/>
+                <img src="1fca45ea1b50de9601aad721ff205404d46127b21eda204212c9f569bf02173a.png" title=" Choose date: 2, 2000, 20 (completed)" width="1920"/>
+                <img src="1fca45ea1b50de9601aad721ff205404d46127b21eda204212c9f569bf02173a.png" title=" And Choose Date (completed)" width="1920"/>
+                <img src="1fca45ea1b50de9601aad721ff205404d46127b21eda204212c9f569bf02173a.png" title=" And Enter City of incorporation &quot;test city&quot;" width="1920"/>
+                <img src="1fca45ea1b50de9601aad721ff205404d46127b21eda204212c9f569bf02173a.png" title=" Enter city of incorporation: test city" width="1920"/>
+                <img src="06ee5bfd9533a4eb37aa8c7d9c93e22e68556b97178cbd71a0a65fcf0a8f0603.png" title=" Enter city of incorporation: test city (completed)" width="1920"/>
+                <img src="06ee5bfd9533a4eb37aa8c7d9c93e22e68556b97178cbd71a0a65fcf0a8f0603.png" title=" And Enter City of incorporation &quot;test city&quot; (completed)" width="1920"/>
+                <img src="06ee5bfd9533a4eb37aa8c7d9c93e22e68556b97178cbd71a0a65fcf0a8f0603.png" title=" And Select country of incorporation" width="1920"/>
+                <img src="49017682a2c5b7407aed6da9d2c4932821fdc748a38c91aa9a51b69f4f1fb0e2.png" title=" Select country of incorporation: 3" width="1920"/>
+                <img src="c0ee7bd32abbb897f3947b9eb36b328a9f133943ad24bb75472c33b9e945e53b.png" title=" Select country of incorporation: 3 (completed)" width="1920"/>
+                <img src="c0ee7bd32abbb897f3947b9eb36b328a9f133943ad24bb75472c33b9e945e53b.png" title=" And Select country of incorporation (completed)" width="1920"/>
+                <img src="c0ee7bd32abbb897f3947b9eb36b328a9f133943ad24bb75472c33b9e945e53b.png" title=" And Enter Operating Street Address &quot;test city address&quot;" width="1920"/>
+                <img src="c0ee7bd32abbb897f3947b9eb36b328a9f133943ad24bb75472c33b9e945e53b.png" title=" Enter operating street address: test city address" width="1920"/>
+                <img src="962a1299ca1a5d9d066082c4a464bc441fb0d4be0b7e7c2d05eb9ba00b5c0dfd.png" title=" Enter operating street address: test city address (completed)" width="1920"/>
+                <img src="962a1299ca1a5d9d066082c4a464bc441fb0d4be0b7e7c2d05eb9ba00b5c0dfd.png" title=" And Enter Operating Street Address &quot;test city address&quot; (completed)" width="1920"/>
+                <img src="962a1299ca1a5d9d066082c4a464bc441fb0d4be0b7e7c2d05eb9ba00b5c0dfd.png" title=" And Enter Operating city &quot;operating city&quot;" width="1920"/>
+                <img src="5280a6301328d20679048a906628493ee1b73629e3039bff0c0030e42abd86be.png" title=" Enter operating city: operating city" width="1920"/>
+                <img src="70f20b52e592e3a280f3709a841a010355a8bd04d739c4078596e0b5a6a83135.png" title=" Enter operating city: operating city (completed)" width="1920"/>
+                <img src="70f20b52e592e3a280f3709a841a010355a8bd04d739c4078596e0b5a6a83135.png" title=" And Enter Operating city &quot;operating city&quot; (completed)" width="1920"/>
+                <img src="70f20b52e592e3a280f3709a841a010355a8bd04d739c4078596e0b5a6a83135.png" title=" And Enter Operating Postal code &quot;city postal code&quot;" width="1920"/>
+                <img src="22dc82d01f56008ca90f994cc64478345c417e6c4ca9a906a301067ec5f1b734.png" title=" Enter operating postal code: city postal code" width="1920"/>
+                <img src="6dab056c3597edfdea32448fd8f2b4bc2e699969fbffe712af800e87febeed31.png" title=" Enter operating postal code: city postal code (completed)" width="1920"/>
+                <img src="6dab056c3597edfdea32448fd8f2b4bc2e699969fbffe712af800e87febeed31.png" title=" And Enter Operating Postal code &quot;city postal code&quot; (completed)" width="1920"/>
+                <img src="6dab056c3597edfdea32448fd8f2b4bc2e699969fbffe712af800e87febeed31.png" title=" And Select operating Country" width="1920"/>
+                <img src="e86cdde61b87d60c9cf96d5b273c7f868d6cb56880a8f99b31f66f7c2b4f38f1.png" title=" Select operating country: 1" width="1920"/>
+                <img src="a46946650322fe9ec829bd11716ec7ec625f1cadecd3637ea613c08485e530e3.png" title=" Select operating country: 1 (completed)" width="1920"/>
+                <img src="a46946650322fe9ec829bd11716ec7ec625f1cadecd3637ea613c08485e530e3.png" title=" And Select operating Country (completed)" width="1920"/>
+                <img src="a46946650322fe9ec829bd11716ec7ec625f1cadecd3637ea613c08485e530e3.png" title=" And Select initial source of funds" width="1920"/>
+                <img src="a46946650322fe9ec829bd11716ec7ec625f1cadecd3637ea613c08485e530e3.png" title=" Select initial source of funds: 1" width="1920"/>
+                <img src="38fc6bd573b5fc5d400a6d12fa42535649fb516c50f8621a264a9335c998427f.png" title=" Select initial source of funds: 1 (completed)" width="1920"/>
+                <img src="38fc6bd573b5fc5d400a6d12fa42535649fb516c50f8621a264a9335c998427f.png" title=" And Select initial source of funds (completed)" width="1920"/>
+                <img src="38fc6bd573b5fc5d400a6d12fa42535649fb516c50f8621a264a9335c998427f.png" title=" And Select number of employees" width="1920"/>
+                <img src="cc7e004311762f684f1c4554c78ab7d015aff34474522f3c77c6c5b1291b86d6.png" title=" Select number of employees: 2" width="1920"/>
+                <img src="abb23b47bc269d8544e7c8629083de715cb304e7a05ba13c6e94024bc62ca533.png" title=" Select number of employees: 2 (completed)" width="1920"/>
+                <img src="abb23b47bc269d8544e7c8629083de715cb304e7a05ba13c6e94024bc62ca533.png" title=" And Select number of employees (completed)" width="1920"/>
+                <img src="abb23b47bc269d8544e7c8629083de715cb304e7a05ba13c6e94024bc62ca533.png" title=" And Select constitution" width="1920"/>
+                <img src="abb23b47bc269d8544e7c8629083de715cb304e7a05ba13c6e94024bc62ca533.png" title=" Select constitution" width="1920"/>
+                <img src="75b918d0234ead7d714490f62ded0bbd152b344fb0c98b6a7f07491cf62e0429.png" title=" Select constitution (completed)" width="1920"/>
+                <img src="75b918d0234ead7d714490f62ded0bbd152b344fb0c98b6a7f07491cf62e0429.png" title=" And Select constitution (completed)" width="1920"/>
+                <img src="75b918d0234ead7d714490f62ded0bbd152b344fb0c98b6a7f07491cf62e0429.png" title=" And Enter Website &quot;www.testwebsite.com&quot;" width="1920"/>
+                <img src="75b918d0234ead7d714490f62ded0bbd152b344fb0c98b6a7f07491cf62e0429.png" title=" Enter website: www.testwebsite.com" width="1920"/>
+                <img src="6a9da69ea98cc259fa1fb8f79192a770318adcf275c167076457d6c9dce987d6.png" title=" Enter website: www.testwebsite.com (completed)" width="1920"/>
+                <img src="6a9da69ea98cc259fa1fb8f79192a770318adcf275c167076457d6c9dce987d6.png" title=" And Enter Website &quot;www.testwebsite.com&quot; (completed)" width="1920"/>
+                <img src="6a9da69ea98cc259fa1fb8f79192a770318adcf275c167076457d6c9dce987d6.png" title=" And Click confirmation box" width="1920"/>
+                <img src="17a5bc7e685c062a9b3eb9d33a16de6c6a03e5367e4059b9a790b484c83f210f.png" title=" Click confirmation box" width="1920"/>
+                <img src="79e905d4483cec10d2c9b574af5de5d36c1cf0a05c778c5d64f4ae4c4bc4000d.png" title=" Click confirmation box (completed)" width="1920"/>
+                <img src="79e905d4483cec10d2c9b574af5de5d36c1cf0a05c778c5d64f4ae4c4bc4000d.png" title=" And Click confirmation box (completed)" width="1920"/>
+                <img src="79e905d4483cec10d2c9b574af5de5d36c1cf0a05c778c5d64f4ae4c4bc4000d.png" title=" And Click Signup button" width="1920"/>
+                <img src="79e905d4483cec10d2c9b574af5de5d36c1cf0a05c778c5d64f4ae4c4bc4000d.png" title=" Click signup button" width="1920"/>
+                <img src="f0e33854684c2e157faea8197d7cf8ed73e31140608514b8a5988e329f1c072c.png" title=" Click signup button (completed)" width="1920"/>
+                <img src="f0e33854684c2e157faea8197d7cf8ed73e31140608514b8a5988e329f1c072c.png" title=" And Click Signup button (completed)" width="1920"/>
+                <img src="f0e33854684c2e157faea8197d7cf8ed73e31140608514b8a5988e329f1c072c.png" title=" Then Verify Registration Confirmation page" width="1920"/>
+                <img src="92c504f4709f71830883b3d41725acd101664f152b16ef9a6477c14104a364c8.png" title=" Verify registration confirmation page: <span class='failing-color'>FAILURE</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

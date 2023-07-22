@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Afrexim Bank</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="05929de1dc493879b24824743d90bb0e34f2a8ff3dba61e4dff820a05f1a5ba1.html">To Verify The Need Help Functionality</a></span>
+                > <span class="truncate-60"><a
+                    href="66bc0a4d764faeb2b5afd143b823f7c73b044b97a13082a7590d5241a59deb3c.html">To test the need help functionality </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-07-2023 14:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Verify The Need Help Functionality</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0b65361cc045ad86a387d336be588d829c2ab993921180eae8abfd017c32b1e1.html">T004
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="65a2df077748f74ccd607af4e962738958bdf672b0d6b0150ae42bcfa475044e.html">Smoke
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To test the need help functionality
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given To open the Afrexim application<br>When Mouse-hover to Need help and click Submit your request<br>And Select Entity<br>And Select Oppurtunities<br>And Type request "&lt;Type request&gt;"<br>And Select prefix title<br>And Enter first name "&lt;First name&gt;"<br>And Enter last name "&lt;Last name&gt;"<br>And Type the function "&lt;Type function&gt;"<br>And Type organisation "&lt;Type organisation&gt;"<br>And Type country of operation "&lt;Type country of operation&gt;"<br>And Type email "&lt;Type email&gt;"<br>And Type phone "&lt;Type phone&gt;"<br>And Click Submit button<br>Then Verify Thanks for contacting us page</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c401649da90216e8b1b697388b433a291e55a9698b169a24420c9bac72a1146a.png" title=" 1: To test the need help functionality ({Type request=test request, First name=test first name, Last name=test last name, Type function=test function, Type organisation=test org, Type country of operation=test country, Type email=test@gmail.com, Type phone=9998765432})" width="1920"/>
+                <img src="c401649da90216e8b1b697388b433a291e55a9698b169a24420c9bac72a1146a.png" title=" Given To open the Afrexim application" width="1920"/>
+                <img src="c401649da90216e8b1b697388b433a291e55a9698b169a24420c9bac72a1146a.png" title=" When Mouse-hover to Need help and click Submit your request" width="1920"/>
+                <img src="c401649da90216e8b1b697388b433a291e55a9698b169a24420c9bac72a1146a.png" title=" Click submit request" width="1920"/>
+                <img src="3b0176843df85a8289b3ef3fae7a3a958359954403ab1e145689b21187394f13.png" title=" Click submit request (completed)" width="1920"/>
+                <img src="3b0176843df85a8289b3ef3fae7a3a958359954403ab1e145689b21187394f13.png" title=" When Mouse-hover to Need help and click Submit your request (completed)" width="1920"/>
+                <img src="3b0176843df85a8289b3ef3fae7a3a958359954403ab1e145689b21187394f13.png" title=" And Select Entity" width="1920"/>
+                <img src="3b0176843df85a8289b3ef3fae7a3a958359954403ab1e145689b21187394f13.png" title=" Select entity" width="1920"/>
+                <img src="1febda00d0cf9b718243dcddb67c3239e069b76382879e61ad56d8358a55d5fa.png" title=" Select entity (completed)" width="1920"/>
+                <img src="1febda00d0cf9b718243dcddb67c3239e069b76382879e61ad56d8358a55d5fa.png" title=" And Select Entity (completed)" width="1920"/>
+                <img src="1febda00d0cf9b718243dcddb67c3239e069b76382879e61ad56d8358a55d5fa.png" title=" And Select Oppurtunities" width="1920"/>
+                <img src="1febda00d0cf9b718243dcddb67c3239e069b76382879e61ad56d8358a55d5fa.png" title=" Select oppurtunities" width="1920"/>
+                <img src="a06d395c7a2c1912daab0800c04082b5c79cb5e8ae69924499a25df2a90517ca.png" title=" Select oppurtunities (completed)" width="1920"/>
+                <img src="a06d395c7a2c1912daab0800c04082b5c79cb5e8ae69924499a25df2a90517ca.png" title=" And Select Oppurtunities (completed)" width="1920"/>
+                <img src="a06d395c7a2c1912daab0800c04082b5c79cb5e8ae69924499a25df2a90517ca.png" title=" And Type request &quot;test request&quot;" width="1920"/>
+                <img src="a06d395c7a2c1912daab0800c04082b5c79cb5e8ae69924499a25df2a90517ca.png" title=" Type request: test request" width="1920"/>
+                <img src="88f28e3ecfe14bdc03252b5f7d7467977091a4c8e5fb84908971d9f55a4f8b10.png" title=" Type request: test request (completed)" width="1920"/>
+                <img src="88f28e3ecfe14bdc03252b5f7d7467977091a4c8e5fb84908971d9f55a4f8b10.png" title=" And Type request &quot;test request&quot; (completed)" width="1920"/>
+                <img src="88f28e3ecfe14bdc03252b5f7d7467977091a4c8e5fb84908971d9f55a4f8b10.png" title=" And Select prefix title" width="1920"/>
+                <img src="88f28e3ecfe14bdc03252b5f7d7467977091a4c8e5fb84908971d9f55a4f8b10.png" title=" Select prefix title: 5" width="1920"/>
+                <img src="201edbb80385ac644e675da2c26c1e63a312d0774d9be9c144f145343c20ecb7.png" title=" Select prefix title: 5 (completed)" width="1920"/>
+                <img src="201edbb80385ac644e675da2c26c1e63a312d0774d9be9c144f145343c20ecb7.png" title=" And Select prefix title (completed)" width="1920"/>
+                <img src="201edbb80385ac644e675da2c26c1e63a312d0774d9be9c144f145343c20ecb7.png" title=" And Enter first name &quot;test first name&quot;" width="1920"/>
+                <img src="201edbb80385ac644e675da2c26c1e63a312d0774d9be9c144f145343c20ecb7.png" title=" Type first name: test first name" width="1920"/>
+                <img src="c4c540ec47a2f0e2d4ffb03c0db366edfa8a64b4ba3676d07805fddc9e32a858.png" title=" Type first name: test first name (completed)" width="1920"/>
+                <img src="c4c540ec47a2f0e2d4ffb03c0db366edfa8a64b4ba3676d07805fddc9e32a858.png" title=" And Enter first name &quot;test first name&quot; (completed)" width="1920"/>
+                <img src="c4c540ec47a2f0e2d4ffb03c0db366edfa8a64b4ba3676d07805fddc9e32a858.png" title=" And Enter last name &quot;test last name&quot;" width="1920"/>
+                <img src="f42ec0566bd0a717c545af476656bb4f7088c44b2e4fc8ba9dfbac3f1748cabc.png" title=" Type last name: test last name" width="1920"/>
+                <img src="2a374ab62b47c3d0e3bf18983a8b4d9ca487a43c1397305f53dc6bc5b20a059b.png" title=" Type last name: test last name (completed)" width="1920"/>
+                <img src="2a374ab62b47c3d0e3bf18983a8b4d9ca487a43c1397305f53dc6bc5b20a059b.png" title=" And Enter last name &quot;test last name&quot; (completed)" width="1920"/>
+                <img src="2a374ab62b47c3d0e3bf18983a8b4d9ca487a43c1397305f53dc6bc5b20a059b.png" title=" And Type the function &quot;test function&quot;" width="1920"/>
+                <img src="7d7d610822e6d4f8ec7e58c7fad247cabe4d984cccbd862c0ee3385e19401b0e.png" title=" Type function: test function" width="1920"/>
+                <img src="64958f1f885a015c8fbbe9cb621cbbf1b41d9bb7c65b6397050e66cf38b6b131.png" title=" Type function: test function (completed)" width="1920"/>
+                <img src="64958f1f885a015c8fbbe9cb621cbbf1b41d9bb7c65b6397050e66cf38b6b131.png" title=" And Type the function &quot;test function&quot; (completed)" width="1920"/>
+                <img src="64958f1f885a015c8fbbe9cb621cbbf1b41d9bb7c65b6397050e66cf38b6b131.png" title=" And Type organisation &quot;test org&quot;" width="1920"/>
+                <img src="f5f29679ae805658306508171a10d0857f31319b9b0ed3cc6593ca971ec1f942.png" title=" Type organisation: test org" width="1920"/>
+                <img src="b2082691e71dd2f996af021c4dd7085bc496e6fc9d343cef8f8514bc17f7e413.png" title=" Type organisation: test org (completed)" width="1920"/>
+                <img src="b2082691e71dd2f996af021c4dd7085bc496e6fc9d343cef8f8514bc17f7e413.png" title=" And Type organisation &quot;test org&quot; (completed)" width="1920"/>
+                <img src="b2082691e71dd2f996af021c4dd7085bc496e6fc9d343cef8f8514bc17f7e413.png" title=" And Type country of operation &quot;test country&quot;" width="1920"/>
+                <img src="bf9e75e6d2b744079733c15b6696d2654fcd9cf96d9e1f844730d717ef8bdd80.png" title=" Type country of operation: test country" width="1920"/>
+                <img src="7a42712798090d25cc3770dbe24e08e2a498c6717953105c2e3aa240caa12269.png" title=" Type country of operation: test country (completed)" width="1920"/>
+                <img src="7a42712798090d25cc3770dbe24e08e2a498c6717953105c2e3aa240caa12269.png" title=" And Type country of operation &quot;test country&quot; (completed)" width="1920"/>
+                <img src="7a42712798090d25cc3770dbe24e08e2a498c6717953105c2e3aa240caa12269.png" title=" And Type email &quot;test@gmail.com&quot;" width="1920"/>
+                <img src="75068deb6b203c755fb77f1d9af592ec426e1ff3aea19ade240c2e7f7146417b.png" title=" Type email: test@gmail.com" width="1920"/>
+                <img src="439a76b03a408c86c834681c997c97190c836c40433066c33f863d7b3aeea1a8.png" title=" Type email: test@gmail.com (completed)" width="1920"/>
+                <img src="439a76b03a408c86c834681c997c97190c836c40433066c33f863d7b3aeea1a8.png" title=" And Type email &quot;test@gmail.com&quot; (completed)" width="1920"/>
+                <img src="439a76b03a408c86c834681c997c97190c836c40433066c33f863d7b3aeea1a8.png" title=" And Type phone &quot;9998765432&quot;" width="1920"/>
+                <img src="439a76b03a408c86c834681c997c97190c836c40433066c33f863d7b3aeea1a8.png" title=" Type phone: 9998765432" width="1920"/>
+                <img src="917575aba4a7afcd3929790a6c3c997f551a3d53086f60248d7b69301d49c320.png" title=" Type phone: 9998765432 (completed)" width="1920"/>
+                <img src="917575aba4a7afcd3929790a6c3c997f551a3d53086f60248d7b69301d49c320.png" title=" And Type phone &quot;9998765432&quot; (completed)" width="1920"/>
+                <img src="917575aba4a7afcd3929790a6c3c997f551a3d53086f60248d7b69301d49c320.png" title=" And Click Submit button" width="1920"/>
+                <img src="917575aba4a7afcd3929790a6c3c997f551a3d53086f60248d7b69301d49c320.png" title=" Click submit button" width="1920"/>
+                <img src="d5a2cb2297ef7ed75b030fae0282f3f17e103e8a13ac85c1961d998b325cefba.png" title=" Click submit button (completed)" width="1920"/>
+                <img src="d5a2cb2297ef7ed75b030fae0282f3f17e103e8a13ac85c1961d998b325cefba.png" title=" And Click Submit button (completed)" width="1920"/>
+                <img src="d5a2cb2297ef7ed75b030fae0282f3f17e103e8a13ac85c1961d998b325cefba.png" title=" Then Verify Thanks for contacting us page" width="1920"/>
+                <img src="d5a2cb2297ef7ed75b030fae0282f3f17e103e8a13ac85c1961d998b325cefba.png" title=" Verify thanks for contacting page" width="1920"/>
+                <img src="d5a2cb2297ef7ed75b030fae0282f3f17e103e8a13ac85c1961d998b325cefba.png" title=" 1: To test the need help functionality ({Type request=test request, First name=test first name, Last name=test last name, Type function=test function, Type organisation=test org, Type country of operation=test country, Type email=test@gmail.com, Type phone=9998765432}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="To validate the Signup functionality of Afrexim page" skipped="0" tests="1" time="81.69" timestamp="2023-07-19 02:29:10"><testcase name="To validate the signup functionality"><failure message="Field should be present" type="java.lang.AssertionError">Field should be present</failure><system-err>Field should be present&#13;
+com.Afrexim.pages.Afrexim_Signup_pages.Verify_Registration_Confirmation_page(Afrexim_Signup_pages.java:287)&#13;
+com.Afrexim.steps.Afrexim_Signup_steps.verify_registration_confirmation_page(Afrexim_Signup_steps.java:265)&#13;
+✽.Verify Registration Confirmation page(file:///C:/Users/hp/eclipse-workspace/AfreximBank_SerenityBDD_Framework/src/test/resources/Afrexim_features/Afrexim_Signup.feature:44)&#13;
+</system-err></testcase></testsuite>
