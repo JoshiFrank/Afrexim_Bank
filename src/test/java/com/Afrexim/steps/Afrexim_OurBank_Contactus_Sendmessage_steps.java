@@ -4,7 +4,6 @@ import java.awt.AWTException;
 
 import org.openqa.selenium.WebDriver;
 
-import com.Afrexim.pages.Afrexim_OurBank_Contactus_Givefeedback_pages;
 import com.Afrexim.pages.Afrexim_OurBank_Contactus_Sendmessage_pages;
 
 import io.cucumber.java.en.Then;
@@ -71,11 +70,11 @@ public class Afrexim_OurBank_Contactus_Sendmessage_steps {
 	}
 
 	@Then("Enter telephone with area code {string}")
-	public void enter_telephone_with_area_code(String number) throws InterruptedException {
+	public void enter_telephone_with_area_code(String telephone) throws InterruptedException {
 		
 		Thread.sleep(2000);
 		
-		gp.Enter_telephoneareacode(number);
+		gp.Enter_telephoneareacode(telephone);
 	    
 	}
 

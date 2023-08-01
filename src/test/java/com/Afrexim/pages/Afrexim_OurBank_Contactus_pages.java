@@ -1,5 +1,6 @@
 package com.Afrexim.pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import net.serenitybdd.core.pages.PageObject;
@@ -37,7 +38,9 @@ public class Afrexim_OurBank_Contactus_pages extends PageObject {
 	@Step
 	public void Validate_Find_Branch_pageisdisplayed() {
 		
-		$(By.xpath("//h1[text()='Find a Branch']")).isDisplayed();
+		boolean displayed = $(By.xpath("//h1[text()='Find a Branch']")).isDisplayed();
+		System.out.println(displayed);
+		Assert.assertTrue(displayed);
 
 	}
 

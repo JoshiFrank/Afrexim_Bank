@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="To Test the Our Bank Option in the home page" skipped="0" tests="4" time="279.61" timestamp="2023-08-01 12:04:07"><testcase name="To validate the Our bank dropdown"/><testcase name="To validate About us tables"/><testcase name="To validate the drop down"/><testcase name=""><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='post-29124']/header/h1&quot;}&#10;  (Session info: chrome=115.0.5790.110)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5504febdac9b3d52996fd67b39e8bc00, findElement {using=xpath, value=//*[@id='post-29124']/header/h1}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61047/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5504febdac9b3d52996fd67b39e8bc00" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-29124']/header/h1"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5504febdac9b3d52996fd67b39e8bc00, findElement {using=xpath, value=//*[@id='post-29124']/header/h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61047/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5504febdac9b3d52996fd67b39e8bc00</error><system-err>no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-29124']/header/h1"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5504febdac9b3d52996fd67b39e8bc00, findElement {using=xpath, value=//*[@id='post-29124']/header/h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61047/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5504febdac9b3d52996fd67b39e8bc00&#13;
+com.Afrexim.pages.Afrexim_OurBank_Careers_pages.Validate_selected_jobdetails(Afrexim_OurBank_Careers_pages.java:116)&#13;
+com.Afrexim.steps.Afrexim_OurBank_Careers_Steps.validate_selected_job_details(Afrexim_OurBank_Careers_Steps.java:84)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)&#13;
+org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+</system-err></testcase></testsuite>

@@ -1,9 +1,14 @@
 package com.Afrexim.pages;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 
 public class Afrexim_OurBank_Careers_pages extends PageObject {
@@ -111,6 +116,100 @@ public class Afrexim_OurBank_Careers_pages extends PageObject {
 		boolean displayed = $(By.xpath("//*[@id='post-29124']/header/h1")).isDisplayed();
 
 		Assert.assertTrue(displayed);
+	}
+	// -----------------------------------------------------------------------------------------
+
+	// Pages - Validate the Dropdowns of Vacancies
+
+	@Step
+	public void Click_All_Vacancies() throws InterruptedException {
+
+		$(By.xpath("//select[@id='job_categories_select']")).click();
+		Thread.sleep(4000);
+	}
+
+	public String Validate_All_vacancies_Dropdown() {
+
+		WebElementFacade drop = $(By.xpath("//select[@id='job_categories_select']"));
+
+		String text = "";
+		Select s = new Select(drop);
+
+		List<WebElement> options = s.getOptions();
+
+		for (int i = 0; i < options.size(); i++) {
+
+			text = options.get(i).getText();
+
+			System.out.println("Dropdown text:" + text);
+
+		}
+
+		return text;
+
+	}
+	
+	public String Validate_Location_Dropdown() {
+		
+		
+		
+		
+		WebElementFacade drop = $(By.xpath("//select[@id='job_locations_select']"));
+
+		String text = "";
+		Select s = new Select(drop);
+
+		List<WebElement> options = s.getOptions();
+
+		for (int i = 0; i < options.size(); i++) {
+
+			text = options.get(i).getText();
+
+			System.out.println("Dropdown text:" + text);
+
+		}
+
+		return text;
+
+	}
+	
+	
+	
+	public String Validate_Expiry_Limitation_Dropdown() {
+		
+		
+		WebElementFacade drop = $(By.xpath("//select[@id='job_expiry_select']"));
+
+		String text = "";
+		Select s = new Select(drop);
+
+		List<WebElement> options = s.getOptions();
+
+		for (int i = 0; i < options.size(); i++) {
+
+			text = options.get(i).getText();
+
+			System.out.println("Dropdown text:" + text);
+
+		}
+
+		return text;
+		
+		
+		
+		
+
+	}
+	
+	
+	public void Click_Location_Dropdown() {
+		
+		$(By.xpath("//select[@id='job_locations_select']")).click();
+	}
+	
+	
+	public void Click_Expiry_Limitation_Dropdown() {
+		$(By.xpath("//select[@id='job_expiry_select']")).click();
 	}
 
 }

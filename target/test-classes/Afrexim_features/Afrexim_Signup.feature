@@ -46,7 +46,7 @@ Then Verify Registration Confirmation page
 Examples:
 
 |firstname|lastname|contactnum|additionalnum|email|contacttitle|signin username|give password|confirm password|organisation legal name|organisation short name|activities description|reg number|city of incorporation|operating city address|operating city|operating postal code|enter website|
-|test1|test2|+9876543210|+9876543222|test12@gmai.com|Mr|tes12@gmail.com|Test12345|Test12345|test company|test com|test test test|123456789|test city|test city address|operating city|city postal code|www.testwebsite.com|
+|test1|test2|+9876543210|+9876543222|test456@gmai.com|Mr|tes12@gmail.com|Test12345|Test12345|test company|test com|test test test|123456789|test city|test city address|operating city|city postal code|www.testwebsite.com|
 
 
 

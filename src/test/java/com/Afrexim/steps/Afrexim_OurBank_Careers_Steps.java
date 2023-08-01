@@ -85,5 +85,70 @@ public class Afrexim_OurBank_Careers_Steps {
 
 		Thread.sleep(3000);
 	}
+	
+	
+	
+	
+	
+	// Validate the Dropdowns of Vacancies
+	//_________________________________________
+	
+	
+	
+	
+	@When("Click the All Vacancies Dropdown")
+	public void click_the_all_vacancies_dropdown() throws InterruptedException {
+		
+		
+		
+	    cp.Click_All_Vacancies();
+	    
+	    
+	}
+
+	@Then("All types of vacancies should be presented in the Dropdown")
+	public void all_types_of_vacancies_should_be_presented_in_the_dropdown() {
+		
+		
+	    cp.Validate_All_vacancies_Dropdown();	    
+	   
+	}
+
+	@When("Click the job location Dropdown")
+	public void click_the_job_location_dropdown() {
+		
+	 cp.Click_Location_Dropdown();
+	}
+
+	@Then("Required location should be presented in the Dropdown")
+	public void required_location_should_be_presented_in_the_dropdown() {
+		
+		cp.Validate_Location_Dropdown();
+	   
+	}
+
+	@When("Click the Expiry limitation Dropdown")
+	public void click_the_expiry_limitation_dropdown() {
+		
+		
+	  cp.Click_Expiry_Limitation_Dropdown();
+	}
+
+	@Then("Required Expiry limitations should be presented in the Dropdown")
+	public void required_expiry_limitations_should_be_presented_in_the_dropdown() {
+		
+		
+		cp.Validate_Expiry_Limitation_Dropdown();
+	
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

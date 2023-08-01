@@ -1,6 +1,5 @@
 package com.Afrexim.steps;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.Afrexim.pages.Afrexim_Signup_pages;

@@ -1,14 +1,9 @@
 package com.Afrexim.steps;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 import org.openqa.selenium.WebDriver;
 
 import com.Afrexim.pages.Afrexim_Investors_pages;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Managed;

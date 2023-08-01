@@ -141,6 +141,7 @@ public class Afrexim_OurBank_Contactus_Sendmessage_pages extends PageObject{
 	@Step
 	public void Click_Submitbuttonoption() {
 		
+		
 		$(By.xpath("//input[@type='submit']")).click();
 
 	}
