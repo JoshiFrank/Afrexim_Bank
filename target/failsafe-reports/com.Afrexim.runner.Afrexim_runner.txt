@@ -1,33 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: com.Afrexim.runner.Afrexim_runner
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 542.337 s <<< FAILURE! - in com.Afrexim.runner.Afrexim_runner
-To Test the Our Bank Option in the home page. #1  Time elapsed: 46.059 s  <<< ERROR!
+Tests run: 21, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 980.37 s <<< FAILURE! - in com.Afrexim.runner.Afrexim_runner
+To test the forgot password functionality.To validate the forgot password functionality with valid and invalid credentials. #1  Time elapsed: 5.867 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: 
+WebDriver was unable to create a new instance of type class org.openqa.selenium.chrome.ChromeDriver
+WebDriver reported the following message: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+See below for more details.
+Caused by: java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+To Test the Our Bank Option in the home page. #1  Time elapsed: 46.38 s  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='post-29124']/header/h1"}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.111)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c3c2e1b978153a935c07e7aea55f9690, findElement {using=xpath, value=//*[@id='post-29124']/header/h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59001}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59001/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3c2e1b978153a935c07e7aea55f9690
+Command: [aafad0809fbcfbb593a6db15e6eb24be, findElement {using=xpath, value=//*[@id='post-29124']/header/h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61705}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61705/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aafad0809fbcfbb593a6db15e6eb24be
 
-To Test the Our Bank Option in the home page. #3  Time elapsed: 46.091 s  <<< ERROR!
-net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.id: recaptcha-anchor to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#recaptcha\-anchor"}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+To Test the Our Bank Option in the home page. #3  Time elapsed: 64.848 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="submit" id="gform_submit_button_4" class="gform_button button" value="Submit" onclick="if(window[&quot;gf_submitting_4&quot;]){return false;}  window[&quot;gf_submitting_4&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_4&quot;]){return false;} window[&quot;gf_submitting_4&quot;]=true;  jQuery(&quot;#gform_4&quot;).trigger(&quot;submit&quot;,[true]); }"> is not clickable at point (530, 503). Other element would receive the click: <iframe title="recaptcha challenge expires in two minutes" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=pCoGBhjs9s8EhFOHJFe8cqis&amp;k=6LeJmpgUAAAAAMP7keawG55_pOkHuSywPytLxhYn" name="c-tum701gfpb5o" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 400px; height: 580px;"></iframe>
+  (Session info: chrome=115.0.5790.111)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [87eceb0d2ff57e1a97eb7724294c1da5, findElement {using=id, value=recaptcha-anchor}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59086/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87eceb0d2ff57e1a97eb7724294c1da5
-
-To validate the Signup functionality of Afrexim page.To validate the signup functionality  Time elapsed: 81.731 s  <<< FAILURE!
-java.lang.AssertionError: Field should be present
+Command: [bed67e0c8dd78056c625c0c76cbdafd9, clickElement {id=AFF63306D664A1D3B908DC4DCFE6F752_element_119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61792/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (bed67e0c8dd78056c625c0c76cbdafd9)] -> xpath: //input[@type='submit']]
+Session ID: bed67e0c8dd78056c625c0c76cbdafd9
 

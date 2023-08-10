@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Afrexim Bank</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="7d591abbb3d2fbb62234dbd0495244e86abdfd598272bac1a13e6b213f9bea04.html">To Test The Media Option</a></span>
+                > <span class="truncate-60"><a
+                    href="f8c2f22a0e7ac8742c477be917369d8c09502d83f6b29907ac29aa80b4fbfde3.html">To validate the Press Releases Functionalty </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-08-2023 16:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Test The Media Option</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0e26a85110dd695768c671c6c1d97d6b0fe49ed13021c07007896327ed34761c.html">New
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To validate the Press Releases Functionalty
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a7fc0aa453dee5e124f0af9a6433ba90ea22dcac405bad7ec1deccf5f719b779.png" title=" Given To open the Afrexim application" width="1920"/>
+                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" When To click the Media option" width="1920"/>
+                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" Click mediaoption" width="1920"/>
+                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" When To click the Media option (completed)" width="1920"/>
+                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" And To click the Press Releases link" width="1920"/>
+                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" Click press releases link" width="1920"/>
+                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" And To click the Press Releases link (completed)" width="1920"/>
+                <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" And TO click the first link" width="1920"/>
+                <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Click the first link" width="1920"/>
+                <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" And TO click the first link (completed)" width="1920"/>
+                <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Then Validate the first link details should be displayed" width="1920"/>
+                <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Validate the first link details" width="1920"/>
+                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" When Navigate to back" width="1920"/>
+                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" And To click the second link" width="1920"/>
+                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Click the second link" width="1920"/>
+                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" And To click the second link (completed)" width="1920"/>
+                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Then Validate the second link details should be displayed" width="1920"/>
+                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Validate the second link details" width="1920"/>
+                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" When Navigate to back" width="1920"/>
+                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" And To click third link" width="1920"/>
+                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Click third link" width="1920"/>
+                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" And To click third link (completed)" width="1920"/>
+                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Then Validate the third link details should be displayed" width="1920"/>
+                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Validate the third link" width="1920"/>
+                <img src="03ac0b9fd3979c3963b60c6f087daf4b57c4b8192a16135ab3a6fdb40a5353b4.png" title=" When Navigate to back" width="1920"/>
+                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" And To click fourth link" width="1920"/>
+                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Click fourth link" width="1920"/>
+                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Then Validate the fourth link details should be displayed" width="1920"/>
+                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Validate the fourth link" width="1920"/>
+                <img src="0b60827704635d8a40e5611c6100559b29845bc5a8e84db34b0bf46773ab0df4.png" title=" When Navigate to back" width="1920"/>
+                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" And To click fifth link" width="1920"/>
+                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Click fifth link" width="1920"/>
+                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" And To click fifth link (completed)" width="1920"/>
+                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Then Validate the fifth link details should be displayed" width="1920"/>
+                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Validate the fifth link" width="1920"/>
+                <img src="ac39915803b3058595a3ab03db8dc1211c8c30089ae18300eef197c20a578364.png" title=" When Navigate to back" width="1920"/>
+                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" And To click sixth link" width="1920"/>
+                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Click sixth link" width="1920"/>
+                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" And To click sixth link (completed)" width="1920"/>
+                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Then Valiadate the sixth link details should be displayed" width="1920"/>
+                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Valiadate the sixth link" width="1920"/>
+                <img src="4a784e8f72554fdbc280018147056069a9b6fe4baf713b0492e154c064752167.png" title=" When Navigate to back" width="1920"/>
+                <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" And To click seventh link" width="1920"/>
+                <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Click seventh link" width="1920"/>
+                <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" And To click seventh link (completed)" width="1920"/>
+                <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Then Validate the seventh link details should be displayed" width="1920"/>
+                <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Validate the seventh link details" width="1920"/>
+                <img src="08cac11733f047f4431bafdfc9e822be645720513475e1fd1de960960758bf37.png" title=" When Navigate to back" width="1920"/>
+                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" And To click Eighth link" width="1920"/>
+                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Click eighth link" width="1920"/>
+                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" And To click Eighth link (completed)" width="1920"/>
+                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Then Validate the Eighth link details should be displayed" width="1920"/>
+                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Validate the eighth link details" width="1920"/>
+                <img src="a310303d67795d90c00884d2e9d295f7fc7a0536b349957c9a309d3705e0b023.png" title=" When Navigate to back" width="1920"/>
+                <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" And To click nineth link" width="1920"/>
+                <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Click nineth link" width="1920"/>
+                <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" And To click nineth link (completed)" width="1920"/>
+                <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Then Validate the nineth link details should be displayed" width="1920"/>
+                <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Validate the nineth link details" width="1920"/>
+                <img src="7ff9ac5f2c52cc0e31aaa3712586b5101d51bb45b3639267368e90180bcc484e.png" title=" When Navigate to back" width="1920"/>
+                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" And To click tenth link" width="1920"/>
+                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Click tenth link" width="1920"/>
+                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" And To click tenth link (completed)" width="1920"/>
+                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Then Validate the tenth link details should be displayed" width="1920"/>
+                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Validate the tenth link" width="1920"/>
+                <img src="e19166f93a13985bcb06bf0836f4400899897431bd20b3423ce41924f8796e9b.png" title=" When Navigate to back" width="1920"/>
+                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" And To click Eleventh link" width="1920"/>
+                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Click eleventh link" width="1920"/>
+                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" And To click Eleventh link (completed)" width="1920"/>
+                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Then Validate the eleventh link details should be displayed" width="1920"/>
+                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Validate the eleventh link" width="1920"/>
+                <img src="ec42331971d5b9bff96c52104d8fc742970d809e02f18ae0352b438835f9fa01.png" title=" When Navigate to back" width="1920"/>
+                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" And To click Twelth link" width="1920"/>
+                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Click twelth link" width="1920"/>
+                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" And To click Twelth link (completed)" width="1920"/>
+                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Then Valiadate the  Twelth link details should be displayed" width="1920"/>
+                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Valiadate the twelth link details: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

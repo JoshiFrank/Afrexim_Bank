@@ -37,13 +37,13 @@ public class Afrexim_OurBank_Aboutus_pages extends PageObject {
 
 	}
 
-	// organisational structure
+	//organisational structure
 
-	// navigate to back
+	//navigate to back
 
-	// Vision and mission
+	//Vision and mission
 
-	// To click Read more in Vision and Mission
+	//To click Read more in Vision and Mission
 	@Step
 	public void Toclick_Readmore_VisionandMission() {
 
