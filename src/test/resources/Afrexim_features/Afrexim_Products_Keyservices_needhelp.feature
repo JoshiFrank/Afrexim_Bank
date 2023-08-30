@@ -1,4 +1,4 @@
-@T004
+@regression
 @Smoke
 Feature: To verify the need help functionality
 

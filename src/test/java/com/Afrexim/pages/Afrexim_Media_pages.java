@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import io.cucumber.java.en.Then;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.PageUrls;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -120,10 +121,10 @@ public class Afrexim_Media_pages extends PageObject {
 
 	// To click twenty-twenty two year
 	@Step
-	public void click_twentytwentytwoyear() {
+	public void click_twentytwentytwoyear() throws InterruptedException {
 
+		
 		$(By.xpath("//a[text()='2022']")).click();
-
 	}
 
 	// Validate twenty-twenty two news results
@@ -146,7 +147,8 @@ public class Afrexim_Media_pages extends PageObject {
 	// To click twenty-twenty one year
 	@Step
 	public void click_twentytwentyoneyear() {
-		$(By.xpath("//a[text()='2021']")).click();
+
+		$(By.partialLinkText("2021")).click();
 	}
 
 	// Validate twenty-twenty one news results
@@ -473,6 +475,322 @@ public class Afrexim_Media_pages extends PageObject {
 		}
 	}
 
+	// ------------------------------------------------------------------------
+	// Validate the Past events functionality
+
+	// To click the events option
+	@Step
+	public void To_click_eventsoption() {
+
+		$(By.xpath("(//a[text()='Events'])[1]")).click();
+
+	}
+
+	// To click the past events option
+	@Step
+	public void To_click_pasteventsoption() {
+
+		$(By.xpath("(//a[text()='Past Events'])[2]")).click();
+
+	}
+
+	// To validate the past events page
+	@Step
+	public void To_validate_pasteventspage() {
+
+		$(By.xpath("(//h1[text()='Past events'])")).isDisplayed();
+
+	}
+
+	// To click right arrow
+	@Step
+	public void To_click_right_arrowInPastEventsPage() throws InterruptedException {
+
+		for (int i = 0; i <= 7; i++) {
+
+			Thread.sleep(2000);
+
+			$(By.xpath("(//button[@type='button'])[2]")).click();
+		}
+
+	}
+
+	// To click and check left arrow button
+	@Step
+	public void To_click_checkleftarrow() throws InterruptedException {
+
+		for (int i = 0; i <= 7; i++) {
+
+			Thread.sleep(2000);
+
+			$(By.xpath("(//button[@type='button'])[1]")).click();
+
+		}
+	}
+
+	// To validate twenty-twenty-two past events results
+	@Step
+
+	public void To_validate_twenty_twenty_twopastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 2; i++) {
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty-twenty-one past events results
+	@Step
+	public void To_validate_twentytwentyonePastEventsResults() throws InterruptedException {
+		for (int i = 1; i <= 7; i++) {
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty-twenty past events results
+	public void To_validate_twentytwentyPastEventsResults() {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+	}
+
+	// To validate twenty nineteen past events results
+	@Step
+	public void To_validate_twentyNineteenPastEventResults() throws InterruptedException {
+		for (int i = 1; i <= 5; i++) {
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty eighteen past events results
+	@Step
+	public void To_validate_twentyEighteenPastEventsResults() throws InterruptedException {
+		for (int i = 1; i <= 2; i++) {
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty seventeen past events results
+	@Step
+	public void to_validate_twenty_seventeen_past_events_results() throws InterruptedException {
+
+		for (int i = 1; i <= 1; i++) {
+
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty sixteen past events results
+	@Step
+	public void To_validate_twentySixteenPastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 4; i++) {
+			Thread.sleep(2000);
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty fifteen past events results
+	@Step
+	public void To_validate_twentyFifteenPastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty fourteen past events results
+	@Step
+	public void To_validate_twentyFourteenPastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 5; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty thirteen past events results
+	@Step
+	public void To_validate_twentyThirteenPastEventsResults() throws InterruptedException {
+		for (int i = 1; i <= 1; i++) {
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty-twelve past events results
+	@Step
+	public void To_validate_twentytwelvePastEventsResults() {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+	}
+
+	// To validate twenty eleven past events results
+	@Step
+	public void To_validate_twentyElevenPastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty-ten past events results
+	@Step
+	public void To_validate_twentytenPastEventsResults() {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+	}
+
+	// To validate twenty nine past events results
+	@Step
+	public void To_validate_twentyNinePastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 5; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
+	// To validate twenty eight past events results
+	@Step
+	public void To_validate_twentyEightPastEventsResults() throws InterruptedException {
+
+		for (int i = 1; i <= 2; i++) {
+
+			WebElement news = getDriver().findElement(By.xpath("(//article/div[@class='text'])[" + i + "]"));
+
+			String text = news.getText();
+
+			System.out.println("********************");
+			System.out.println(text);
+			System.out.println("********************");
+		}
+
+		Thread.sleep(2000);
+	}
+
 // ----------------------------------------------------------------------------------------------------
 	// validate the Press Releases Functionalty
 
@@ -712,12 +1030,7 @@ public class Afrexim_Media_pages extends PageObject {
 //-----------------------------------------------------------------------------------------------------------------
 	// validate the Insights functionalty
 
-	
-	
-	
-	
-	
-	//click the insights link
+	// click the insights link
 	@Step
 	public void click_the_insights_link() throws InterruptedException {
 
@@ -727,16 +1040,14 @@ public class Afrexim_Media_pages extends PageObject {
 
 	}
 
-	
-	//click link in insights page
+	// click link in insights page
 	@Step
 	public void click_link_in_insights() {
 
 		$(By.xpath("//*[@id='post-21328']/div[2]/header/h2/a")).click();
 	}
 
-	
-	//validate the trade page
+	// validate the trade page
 	@Step
 	public void validate_the_trade_page() {
 

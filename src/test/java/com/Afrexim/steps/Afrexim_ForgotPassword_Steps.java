@@ -47,9 +47,9 @@ public class Afrexim_ForgotPassword_Steps {
 	}
 
 	@Then("Validate positive and negative status message using respective credentials")
-	public void validate_positive_and_negative_status_message_using_respective_credentials() {
+	public void validate_positive_and_negative_status_message_using_respective_credentials() throws InterruptedException {
 
-		
+		fp.Validate_positive_and_negative_status_message();
 		
 		
 	

@@ -149,7 +149,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-08-2023 16:14</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-08-2023 14:10</span>
     <br style="clear:left"/>
 </div>
 
@@ -194,12 +194,6 @@
                                 </a>
                                 </span>
                             </p>
-                            <p class="tag">
-                                <span class="badge tag-badge" style="background:default;"
-                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0e26a85110dd695768c671c6c1d97d6b0fe49ed13021c07007896327ed34761c.html">New
-                                </a>
-                                </span>
-                            </p>
                         </td>
                     </tr>
                 </table>
@@ -208,9 +202,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">To validate the Press Releases Functionalty
+                                <span class="failing-color">To validate the Press Releases Functionalty
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -227,85 +221,115 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.Afrexim.pages.Afrexim_Media_pages.click_tenth_link(Afrexim_Media_pages.java:982)<br />com.Afrexim.steps.Afrexim_Media_steps.to_click_tenth_link(Afrexim_Media_steps.java:565)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@id='post-29157']/div[2]/header/h2/a to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.Afrexim.pages.Afrexim_Media_pages.click_tenth_link(Afrexim_Media_pages.java :982)<br />com.Afrexim.steps.Afrexim_Media_steps.to_click_tenth_link(Afrexim_Media_steps.java :565)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java :130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java :23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java :130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java :137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :51)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource13910422611315740216.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a7fc0aa453dee5e124f0af9a6433ba90ea22dcac405bad7ec1deccf5f719b779.png" title=" Given To open the Afrexim application" width="1920"/>
-                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" When To click the Media option" width="1920"/>
-                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" Click mediaoption" width="1920"/>
-                <img src="fe360a021085b3ca180ef1137242a16bad7f257fd152aa27d696a06d2dd91feb.png" title=" When To click the Media option (completed)" width="1920"/>
-                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" And To click the Press Releases link" width="1920"/>
-                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" Click press releases link" width="1920"/>
-                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" And To click the Press Releases link (completed)" width="1920"/>
+                <img src="f86deb6cf1b2947d1671a04132fbc79e483f806416979da7ee404325473836d4.png" title=" Given To open the Afrexim application" width="1920"/>
+                <img src="3fc37e30c3c6072515c274baa777598faefb56d01484acd9984365ad1f9c73b5.png" title=" When To click the Media option" width="1920"/>
+                <img src="3fc37e30c3c6072515c274baa777598faefb56d01484acd9984365ad1f9c73b5.png" title=" Click mediaoption" width="1920"/>
+                <img src="ee6affa93adfb666f6bbe4e3f07eebf10f76be5c6fb411d683234299ca0dd8e8.png" title=" Click mediaoption (completed)" width="1920"/>
+                <img src="ee6affa93adfb666f6bbe4e3f07eebf10f76be5c6fb411d683234299ca0dd8e8.png" title=" When To click the Media option (completed)" width="1920"/>
+                <img src="6ea9e05ca40f082cd8d9a84b6e1eca69d35e94921bc0844d2a36588e00fbd8d0.png" title=" And To click the Press Releases link" width="1920"/>
+                <img src="6ea9e05ca40f082cd8d9a84b6e1eca69d35e94921bc0844d2a36588e00fbd8d0.png" title=" Click press releases link" width="1920"/>
+                <img src="6ea9e05ca40f082cd8d9a84b6e1eca69d35e94921bc0844d2a36588e00fbd8d0.png" title=" And To click the Press Releases link (completed)" width="1920"/>
                 <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" And TO click the first link" width="1920"/>
                 <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Click the first link" width="1920"/>
                 <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" And TO click the first link (completed)" width="1920"/>
                 <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Then Validate the first link details should be displayed" width="1920"/>
                 <img src="8326216ca82af8ccdc2c905e660b17cca51e50ed9c7ff87b4887f02f8786f5cb.png" title=" Validate the first link details" width="1920"/>
-                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" When Navigate to back" width="1920"/>
-                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" And To click the second link" width="1920"/>
-                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Click the second link" width="1920"/>
-                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" And To click the second link (completed)" width="1920"/>
-                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Then Validate the second link details should be displayed" width="1920"/>
-                <img src="c299ed899717651736ce0b12dfb368238c004e2a1100a78866e3d8a0f6bc497b.png" title=" Validate the second link details" width="1920"/>
-                <img src="50562d2f513bbe0b60402c690d92d1126f0a227012efd6162286d36006d9f5f1.png" title=" When Navigate to back" width="1920"/>
-                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" And To click third link" width="1920"/>
-                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Click third link" width="1920"/>
-                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" And To click third link (completed)" width="1920"/>
-                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Then Validate the third link details should be displayed" width="1920"/>
-                <img src="c1e1f5160271c9e16fe5cc3639b725771fd16d1817645858761e061faab5a9ec.png" title=" Validate the third link" width="1920"/>
-                <img src="03ac0b9fd3979c3963b60c6f087daf4b57c4b8192a16135ab3a6fdb40a5353b4.png" title=" When Navigate to back" width="1920"/>
-                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" And To click fourth link" width="1920"/>
-                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Click fourth link" width="1920"/>
-                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Then Validate the fourth link details should be displayed" width="1920"/>
-                <img src="ef3d6d1d0281ed215d2c3c7a5da10e60be50f34d4c450f6e110025fb7834af63.png" title=" Validate the fourth link" width="1920"/>
-                <img src="0b60827704635d8a40e5611c6100559b29845bc5a8e84db34b0bf46773ab0df4.png" title=" When Navigate to back" width="1920"/>
-                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" And To click fifth link" width="1920"/>
-                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Click fifth link" width="1920"/>
-                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" And To click fifth link (completed)" width="1920"/>
-                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Then Validate the fifth link details should be displayed" width="1920"/>
-                <img src="1ed3ac523b6ab2015ad322a06ffbab6eff195a39b4c03c62f278478aab06edc2.png" title=" Validate the fifth link" width="1920"/>
-                <img src="ac39915803b3058595a3ab03db8dc1211c8c30089ae18300eef197c20a578364.png" title=" When Navigate to back" width="1920"/>
-                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" And To click sixth link" width="1920"/>
-                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Click sixth link" width="1920"/>
-                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" And To click sixth link (completed)" width="1920"/>
-                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Then Valiadate the sixth link details should be displayed" width="1920"/>
-                <img src="b40c743351d778f18a5665a456b85b51251ca6edaf0b231ebfcdbce0b83d3b59.png" title=" Valiadate the sixth link" width="1920"/>
-                <img src="4a784e8f72554fdbc280018147056069a9b6fe4baf713b0492e154c064752167.png" title=" When Navigate to back" width="1920"/>
+                <img src="e1cdd4b2972d56e660b78b72cd0b30e273692fdcb0ea837539345437e5f0d308.png" title=" When Navigate to back" width="1920"/>
+                <img src="0083219aea5cf139b0c9e49cbfb9dd35d3a73565b8be2ade53c2ea570b7c5f83.png" title=" And To click the second link" width="1920"/>
+                <img src="0083219aea5cf139b0c9e49cbfb9dd35d3a73565b8be2ade53c2ea570b7c5f83.png" title=" Click the second link" width="1920"/>
+                <img src="0083219aea5cf139b0c9e49cbfb9dd35d3a73565b8be2ade53c2ea570b7c5f83.png" title=" And To click the second link (completed)" width="1920"/>
+                <img src="0083219aea5cf139b0c9e49cbfb9dd35d3a73565b8be2ade53c2ea570b7c5f83.png" title=" Then Validate the second link details should be displayed" width="1920"/>
+                <img src="0083219aea5cf139b0c9e49cbfb9dd35d3a73565b8be2ade53c2ea570b7c5f83.png" title=" Validate the second link details" width="1920"/>
+                <img src="3994fd6b96056f3132f2c9d33b286056e06270a92cd36ffa2f459175262205b3.png" title=" When Navigate to back" width="1920"/>
+                <img src="68f74f32d565d0198e2e61799a0f8d3d50eacf0d574b36799722811ccab31673.png" title=" And To click third link" width="1920"/>
+                <img src="68f74f32d565d0198e2e61799a0f8d3d50eacf0d574b36799722811ccab31673.png" title=" Click third link" width="1920"/>
+                <img src="68f74f32d565d0198e2e61799a0f8d3d50eacf0d574b36799722811ccab31673.png" title=" And To click third link (completed)" width="1920"/>
+                <img src="68f74f32d565d0198e2e61799a0f8d3d50eacf0d574b36799722811ccab31673.png" title=" Then Validate the third link details should be displayed" width="1920"/>
+                <img src="68f74f32d565d0198e2e61799a0f8d3d50eacf0d574b36799722811ccab31673.png" title=" Validate the third link" width="1920"/>
+                <img src="f110b20863ab86168ca14b36c7fad62dad19be9df372e2dbd931734ee5544c34.png" title=" When Navigate to back" width="1920"/>
+                <img src="e67304038538d1c49eae81b03d2da588879b7de657519b407a351a7a85b2013a.png" title=" And To click fourth link" width="1920"/>
+                <img src="e67304038538d1c49eae81b03d2da588879b7de657519b407a351a7a85b2013a.png" title=" Click fourth link" width="1920"/>
+                <img src="e67304038538d1c49eae81b03d2da588879b7de657519b407a351a7a85b2013a.png" title=" And To click fourth link (completed)" width="1920"/>
+                <img src="e67304038538d1c49eae81b03d2da588879b7de657519b407a351a7a85b2013a.png" title=" Then Validate the fourth link details should be displayed" width="1920"/>
+                <img src="e67304038538d1c49eae81b03d2da588879b7de657519b407a351a7a85b2013a.png" title=" Validate the fourth link" width="1920"/>
+                <img src="bff28b07bc728141d30b5a289996896448de68e84f3330477dbbd2b2c04b7706.png" title=" When Navigate to back" width="1920"/>
+                <img src="fd288dd0534e30a9471540d601d2c4a8bef1d5160e6b5783b32536a5e6a4c46b.png" title=" And To click fifth link" width="1920"/>
+                <img src="fd288dd0534e30a9471540d601d2c4a8bef1d5160e6b5783b32536a5e6a4c46b.png" title=" Click fifth link" width="1920"/>
+                <img src="fd288dd0534e30a9471540d601d2c4a8bef1d5160e6b5783b32536a5e6a4c46b.png" title=" And To click fifth link (completed)" width="1920"/>
+                <img src="fd288dd0534e30a9471540d601d2c4a8bef1d5160e6b5783b32536a5e6a4c46b.png" title=" Then Validate the fifth link details should be displayed" width="1920"/>
+                <img src="fd288dd0534e30a9471540d601d2c4a8bef1d5160e6b5783b32536a5e6a4c46b.png" title=" Validate the fifth link" width="1920"/>
+                <img src="7600f17920177151ab8919d74c6e6f2daa56dc246497c4e41a85afc8b9e55a60.png" title=" When Navigate to back" width="1920"/>
+                <img src="f878626f94500c0ce5827f3aea0445da55019d9187257fe294df94b12cd8917f.png" title=" And To click sixth link" width="1920"/>
+                <img src="f878626f94500c0ce5827f3aea0445da55019d9187257fe294df94b12cd8917f.png" title=" Click sixth link" width="1920"/>
+                <img src="f878626f94500c0ce5827f3aea0445da55019d9187257fe294df94b12cd8917f.png" title=" And To click sixth link (completed)" width="1920"/>
+                <img src="f878626f94500c0ce5827f3aea0445da55019d9187257fe294df94b12cd8917f.png" title=" Then Valiadate the sixth link details should be displayed" width="1920"/>
+                <img src="f878626f94500c0ce5827f3aea0445da55019d9187257fe294df94b12cd8917f.png" title=" Valiadate the sixth link" width="1920"/>
+                <img src="dff366554a3c2f08703ee71c98ea96e6fff0ceef1d2a8639294e2968ea16f821.png" title=" When Navigate to back" width="1920"/>
                 <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" And To click seventh link" width="1920"/>
                 <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Click seventh link" width="1920"/>
                 <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" And To click seventh link (completed)" width="1920"/>
                 <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Then Validate the seventh link details should be displayed" width="1920"/>
                 <img src="b5a6a6d1474388ee0ccdb740593a2d4336de5c9209fb8b7e2aec29be45e8bf4b.png" title=" Validate the seventh link details" width="1920"/>
-                <img src="08cac11733f047f4431bafdfc9e822be645720513475e1fd1de960960758bf37.png" title=" When Navigate to back" width="1920"/>
-                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" And To click Eighth link" width="1920"/>
-                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Click eighth link" width="1920"/>
-                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" And To click Eighth link (completed)" width="1920"/>
-                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Then Validate the Eighth link details should be displayed" width="1920"/>
-                <img src="316f05910cdccb01fa56da8f09f8ac0021f71716c6fe402af9d9a7aa0d911e95.png" title=" Validate the eighth link details" width="1920"/>
-                <img src="a310303d67795d90c00884d2e9d295f7fc7a0536b349957c9a309d3705e0b023.png" title=" When Navigate to back" width="1920"/>
+                <img src="1f15a9e57ed141f516cd7e924c844ae4a8bf4aee4746e36abb9840796cd4b40a.png" title=" When Navigate to back" width="1920"/>
+                <img src="5b948c74f9e06c3ebe42fa727e5910a5d821fa2f0dc688d3b82085bda36863f0.png" title=" And To click Eighth link" width="1920"/>
+                <img src="5b948c74f9e06c3ebe42fa727e5910a5d821fa2f0dc688d3b82085bda36863f0.png" title=" Click eighth link" width="1920"/>
+                <img src="5b948c74f9e06c3ebe42fa727e5910a5d821fa2f0dc688d3b82085bda36863f0.png" title=" And To click Eighth link (completed)" width="1920"/>
+                <img src="5b948c74f9e06c3ebe42fa727e5910a5d821fa2f0dc688d3b82085bda36863f0.png" title=" Then Validate the Eighth link details should be displayed" width="1920"/>
+                <img src="5b948c74f9e06c3ebe42fa727e5910a5d821fa2f0dc688d3b82085bda36863f0.png" title=" Validate the eighth link details" width="1920"/>
+                <img src="15c0731444b9cb2c0cfac028c9088fb9c0e066355aaaa807c57453c307ec2202.png" title=" When Navigate to back" width="1920"/>
                 <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" And To click nineth link" width="1920"/>
                 <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Click nineth link" width="1920"/>
                 <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" And To click nineth link (completed)" width="1920"/>
                 <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Then Validate the nineth link details should be displayed" width="1920"/>
                 <img src="84e837d877ff092c8ed3d2ab1d5f01a4f95041be4afc9d2ca9637a90895b4be9.png" title=" Validate the nineth link details" width="1920"/>
-                <img src="7ff9ac5f2c52cc0e31aaa3712586b5101d51bb45b3639267368e90180bcc484e.png" title=" When Navigate to back" width="1920"/>
-                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" And To click tenth link" width="1920"/>
-                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Click tenth link" width="1920"/>
-                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" And To click tenth link (completed)" width="1920"/>
-                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Then Validate the tenth link details should be displayed" width="1920"/>
-                <img src="59090f027c0b6f09c4f36adaa793914c0be8b4f2b925b70794468f5160147da3.png" title=" Validate the tenth link" width="1920"/>
-                <img src="e19166f93a13985bcb06bf0836f4400899897431bd20b3423ce41924f8796e9b.png" title=" When Navigate to back" width="1920"/>
-                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" And To click Eleventh link" width="1920"/>
-                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Click eleventh link" width="1920"/>
-                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" And To click Eleventh link (completed)" width="1920"/>
-                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Then Validate the eleventh link details should be displayed" width="1920"/>
-                <img src="09695ce5745a5606ff926fc925fe947718634340bc2acaeea1acf0fef3af1223.png" title=" Validate the eleventh link" width="1920"/>
-                <img src="ec42331971d5b9bff96c52104d8fc742970d809e02f18ae0352b438835f9fa01.png" title=" When Navigate to back" width="1920"/>
-                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" And To click Twelth link" width="1920"/>
-                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Click twelth link" width="1920"/>
-                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" And To click Twelth link (completed)" width="1920"/>
-                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Then Valiadate the  Twelth link details should be displayed" width="1920"/>
-                <img src="54ee68e4138414dfb00d9529846799c90794b08ceeaa10aa3e558ef695d84c19.png" title=" Valiadate the twelth link details: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="40fa0ad376231400dca8d731343fd8c4e4290e2aa4f223c09bad566c4b7cf2a3.png" title=" When Navigate to back" width="1920"/>
+                <img src="40fa0ad376231400dca8d731343fd8c4e4290e2aa4f223c09bad566c4b7cf2a3.png" title=" And To click tenth link" width="1920"/>
+                <img src="40fa0ad376231400dca8d731343fd8c4e4290e2aa4f223c09bad566c4b7cf2a3.png" title=" Click tenth link: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

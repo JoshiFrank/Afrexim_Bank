@@ -1,4 +1,4 @@
-@productsandservices
+@regression
 Feature: To test the Products and Services functionality
 
 Scenario: To validate the Products and services Dropdown

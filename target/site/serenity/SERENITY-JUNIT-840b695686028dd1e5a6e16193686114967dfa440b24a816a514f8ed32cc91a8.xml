@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="To test the forgot password functionality" skipped="0" tests="4" time="68.34" timestamp="2023-08-07 02:51:14"><testcase name="To validate the forgot password functionality with valid and invalid credentials."/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="To test the forgot password functionality" skipped="0" tests="4" time="169.14" timestamp="2023-08-29 01:52:23"><testcase name="To validate the forgot password functionality with valid and invalid credentials."><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.11.0', revision: '040bc5406b'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: driver.version: unknown&#13;
+AfreximBank.SerenityBDD.Framework@0.0.1-SNAPSHOT/com.Afrexim.pages.Afrexim_ForgotPassword_pages.Click_the_Forgot_Password_link(Afrexim_ForgotPassword_pages.java:14)&#13;
+AfreximBank.SerenityBDD.Framework@0.0.1-SNAPSHOT/com.Afrexim.steps.Afrexim_ForgotPassword_Steps.click_the_forgot_password_link(Afrexim_ForgotPassword_Steps.java:23)&#13;
+✽.Click the Forgot Password link(file:///C:/Users/hp/eclipse-workspace/AfreximBank_SerenityBDD_Framework/src/test/resources/Afrexim_features/Afrexim_ForgotPassword.feature:9)&#13;
+</system-err></testcase></testsuite>

@@ -1,4 +1,4 @@
-@T003
+@regression
 @Smoke
 Feature: To validate the Signup functionality of Afrexim page
 

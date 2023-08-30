@@ -111,8 +111,10 @@ public class Afrexim_OurBank_Careers_pages extends PageObject {
 	// Validate selected job details
 
 	@Step
-	public void Validate_selected_jobdetails() {
+	public void Validate_selected_jobdetails() throws InterruptedException {
 
+		Thread.sleep(2000);
+		
 		boolean displayed = $(By.xpath("//*[@id='post-29124']/header/h1")).isDisplayed();
 
 		Assert.assertTrue(displayed);

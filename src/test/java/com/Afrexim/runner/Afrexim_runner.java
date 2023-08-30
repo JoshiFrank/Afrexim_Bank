@@ -6,10 +6,11 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberSerenityRunner;
 
 @RunWith(CucumberSerenityRunner.class)
-@CucumberOptions(features = "src/test/resources/Afrexim_features",glue= {"com/Afrexim/steps"},tags = "@new")
+@CucumberOptions(features = "src/test/resources/Afrexim_features",glue= {"com/Afrexim/steps"},tags = "@New")
 
 
 public class Afrexim_runner {
+	
 	
 	
 	
@@ -22,3 +23,4 @@ public class Afrexim_runner {
 	
 	
 }
+ 

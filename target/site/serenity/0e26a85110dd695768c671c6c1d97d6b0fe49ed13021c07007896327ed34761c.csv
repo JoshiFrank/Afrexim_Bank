@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"To test the Media option","To Validate the Media dropdown","SUCCESS","2023-08-07T13:21:13.917+05:30[Asia/Calcutta]","0.0","22.4"
+"To test the Knowledge&Research option","To Validate the Knowledge&Research dropdown","ERROR","2023-08-29T13:55:45.9501792+05:30[Asia/Calcutta]","0.0","4.36"
+"To test the Knowledge&Research option","To validate the Knowledge_Publications functionality","FAILURE","2023-08-29T13:57:15.7305918+05:30[Asia/Calcutta]","0.0","175.99"
+"To validate the Functionality of Investers Option in Afrexim Bank","To Test the Investers dropdown","ERROR","2023-08-29T14:28:05.6282411+05:30[Asia/Calcutta]","0.0","1.74"

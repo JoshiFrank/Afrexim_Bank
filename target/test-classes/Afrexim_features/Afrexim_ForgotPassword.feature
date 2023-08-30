@@ -1,5 +1,4 @@
-@T005
-@Smoke
+@regression
 Feature: To test the forgot password functionality
 
 Scenario Outline: To validate the forgot password functionality with valid and invalid credentials.

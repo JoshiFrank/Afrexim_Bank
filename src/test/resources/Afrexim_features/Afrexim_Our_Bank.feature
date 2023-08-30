@@ -1,4 +1,4 @@
-@ourbank
+@regression
 Feature: To Test the Our Bank Option in the home page
 
 Scenario: To validate the Our bank dropdown
@@ -15,7 +15,7 @@ Then To validate Our Bank dropdown
 #Then To validate the About us page
 #And To click Read more in Organisational Structure
 
-@aboutustable
+
 Scenario: To validate About us tables
 
 Given To open the Afrexim application
@@ -65,7 +65,7 @@ Then Validate the job search results
 And Click desired job
 Then Validate selected job details
 
-@findabranch
+
 Scenario:
 Given To open the Afrexim application
 When To click the Our Bank Option
@@ -75,7 +75,7 @@ And Click Read more in Find Branch
 Then Validate Find a Branch page is displayed
 
 
-@Sendusamessage
+
 Scenario Outline: 
 Given To open the Afrexim application
 When To click the Our Bank Option
@@ -104,7 +104,7 @@ Examples:
 |testcompany|firstname lastname|9987654321|test1@gmail.com|test function|test organisation|test country|test requests|
  
 
-@Contctuspage
+
 Scenario Outline: 
 Given To open the Afrexim application
 When To click the Our Bank Option

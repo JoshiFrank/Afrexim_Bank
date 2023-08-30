@@ -1,3 +1,4 @@
+@regression
 Feature: To test the Media option
 
 Scenario: To Validate the Media dropdown
@@ -64,6 +65,64 @@ And To click twenty-eight year
 And Scroll down and click Load more
 Then Validate twenty-eight news results
 
+#Events_PastEvents_Functionality
+
+
+Scenario: To validate the past events functionality
+Given To open the Afrexim application
+When To click the Media option
+And To click the events option
+And To click the past events option
+Then To validate the past events page
+And To click right arrow and check whether years from twenty- twenty two to twenty-eight are present
+And To click and check left arrow button
+Then To validate twenty-twenty-two past events results
+And To click twenty-twenty one year
+And Scroll down and click Load more
+Then To validate twenty-twenty-one past events results
+And To click twenty-twenty year 
+And Scroll down and click Load more
+#Then To validate twenty-twenty past events results
+And To click twenty-nineteen year
+And Scroll down and click Load more
+Then To validate twenty nineteen past events results
+And To click twenty-eighteen year
+And Scroll down and click Load more
+Then To validate twenty eighteen past events results
+And To click twenty-seventeen year
+And Scroll down and click Load more
+Then To validate twenty seventeen past events results
+And To click twenty-sixteen year
+And Scroll down and click Load more
+Then To validate twenty sixteen past events results
+And To click twenty-fifteen year
+And Scroll down and click Load more
+Then To validate twenty fifteen past events results
+And To click twenty-fourteen year
+And Scroll down and click Load more
+Then To validate twenty fourteen past events results
+And To click twenty-thirteen year
+And Scroll down and click Load more
+Then To validate twenty thirteen past events results
+And To click twenty-twelve year
+And Scroll down and click Load more
+#Then To validate twenty-twelve past events results
+And To click twenty-eleven year
+Then To validate twenty eleven past events results
+And To click twenty-ten year
+And Scroll down and click Load more
+#Then To validate twenty-ten past events results
+And To click twenty-nine year
+And Scroll down and click Load more
+Then To validate twenty nine past events results
+And To click twenty-eight year
+And Scroll down and click Load more
+Then To validate twenty eight past events results
+
+
+
+
+
 
 
 Scenario: To validate the Press Releases Functionalty
@@ -106,13 +165,15 @@ When Navigate to back
 And To click Twelth link
 Then Valiadate the  Twelth link details should be displayed
 
-@new
+
 Scenario: To validate the Insights functionalty
 Given To open the Afrexim application
 When To click the Media option
 And To click the Insights link
 And To click link in Insights page
 Then Validate the trade page
+
+
 
 
 

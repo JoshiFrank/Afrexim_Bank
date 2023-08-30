@@ -40,9 +40,9 @@ public class Afrexim_ForgotPassword_pages extends PageObject {
 
 	// Validate positive and negative status message using respective credentials
 	@Step
-	public void Validate_positive_and_negative_status_message() {
+	public void Validate_positive_and_negative_status_message() throws InterruptedException {
 
-		
+		Thread.sleep(3000);
 		
 		try {
 			

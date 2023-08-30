@@ -20,10 +20,12 @@ com\Afrexim\pages\Afrexim_Productsandservices_Keyservices_NeedHelp_Pages.class
 com\Afrexim\runner\Afrexim_runner.class
 com\Afrexim\pages\Afrexim_OurBank_Contactus_pages.class
 com\Afrexim\steps\Afrexim_OurBank_dropdown_steps.class
+com\Afrexim\pages\Afrexim_KnowledgeAndResearch_pages.class
 com\Afrexim\pages\Afrexim_OurBank_dropdown_pages.class
 com\Afrexim\pages\Afrexim_ForgotPassword_pages.class
 com\Afrexim\steps\Afrexim_Signin_steps.class
 com\Afrexim\pages\Afrexim_Signup_pages.class
 com\Afrexim\pages\Afrexim_Investors_pages.class
 com\Afrexim\pages\Afrexim_OurBank_Contactus_Givefeedback_pages.class
+com\Afrexim\steps\Afrexim_KnowledgeAndResearch_Steps.class
 com\Afrexim\steps\Afrexim_Productsandservices_steps.class

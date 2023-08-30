@@ -1,4 +1,4 @@
-@T001
+@regression
 @Smoke
 Feature: To test the Afrexim Bank server
 

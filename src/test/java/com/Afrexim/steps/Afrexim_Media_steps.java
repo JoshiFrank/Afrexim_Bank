@@ -89,7 +89,7 @@ public class Afrexim_Media_steps {
 	}
 
 	@Then("To click twenty-twenty two year")
-	public void to_click_twenty_twenty_two_year() {
+	public void to_click_twenty_twenty_two_year() throws InterruptedException {
 
 		mp.click_twentytwentytwoyear();
 	}
@@ -249,299 +249,382 @@ public class Afrexim_Media_steps {
 
 	@Then("To click twenty-ten year")
 	public void to_click_twenty_ten_year() {
-		
+
 		mp.click_twentyten_year();
 	}
 
 	@Then("Validate twenty-ten news results")
 	public void validate_twenty_ten_news_results() {
-		
+
 		mp.Validate_twentyten_newsresults();
 	}
 
 	@Then("To click twenty-nine year")
 	public void to_click_twenty_nine_year() {
-		
+
 		mp.click_twentynineyear();
 	}
 
 	@Then("Validate twenty-nine news results")
 	public void validate_twenty_nine_news_results() {
-		
-		
+
 		mp.Validate_twentynine_newsresults();
 	}
 
 	@Then("To click twenty-eight year")
 	public void to_click_twenty_eight_year() {
-		
-		
+
 		mp.click_twentyeightyear();
 	}
 
 	@Then("Validate twenty-eight news results")
-	public void validate_twenty_eight_news_results() 
-	{
+	public void validate_twenty_eight_news_results() {
 		mp.Validate_twentyeight_newsresults();
 	}
-	
-	
-	
-	
-	// To validate the Press Releases Functionalty
-	//----------------------------------------------------------------------------------------------------
-	
-	
-	
-	
-	
-	
-	
 
-@When("To click the Press Releases link")
-public void to_click_the_press_releases_link() {
-    
-	mp.click_press_releases_link();
-	
-	
-	
-}
+	// -----------------------------------------------------------------
+	// To validate the Past Events Functionality
 
-@When("TO click the first link")
-public void to_click_the_first_link() throws InterruptedException {
-    
-	
-	
-	Thread.sleep(3000);
-	mp.click_the_first_link();
-	
-}
+	@When("To click the events option")
+	public void to_click_the_events_option() {
 
-@Then("Validate the first link details should be displayed")
-public void validate_the_first_link_details_should_be_displayed() throws InterruptedException {
-    
-	Thread.sleep(2000);
-	
-	mp.validate_the_first_link_details();
-	
-}
+		mp.To_click_eventsoption();
+	}
 
-@When("To click the second link")
-public void to_click_the_second_link() throws InterruptedException {
-    
-	
-	Thread.sleep(3000);
-	mp.click_the_second_link();
-	
-}
+	@When("To click the past events option")
+	public void to_click_the_past_events_option() {
 
-@Then("Validate the second link details should be displayed")
-public void validate_the_second_link_details_should_be_displayed() throws InterruptedException {
-    
-	
-	Thread.sleep(2000);
-	
-	mp.validate_the_second_link_details();
-	
-}
+		mp.To_click_pasteventsoption();
+	}
 
-@When("To click third link")
-public void to_click_third_link() throws InterruptedException {
-    
-	
-	Thread.sleep(3000);
-	mp.click_third_link();
-	
-}
+	@Then("To validate the past events page")
+	public void to_validate_the_past_events_page() {
 
-@Then("Validate the third link details should be displayed")
-public void validate_the_third_link_details_should_be_displayed() throws InterruptedException {
-    
-	Thread.sleep(2000);
-	
-	mp.validate_the_third_link();
-	
-	
-}
+		mp.To_validate_pasteventspage();
+	}
 
-@When("To click fourth link")
-public void to_click_fourth_link() throws InterruptedException {
-    
-	Thread.sleep(3000);
-	mp.click_fourth_link();
-	
-}
+	@Then("To click right arrow and check whether years from twenty- twenty two to twenty-eight are present")
+	public void to_click_right_arrow_and_check_whether_years_from_twenty_twenty_two_to_twenty_eight_are_present()
+			throws InterruptedException {
 
-@Then("Validate the fourth link details should be displayed")
-public void validate_the_fourth_link_details_should_be_displayed() throws InterruptedException {
-    
-	Thread.sleep(2000);
-	mp.validate_the_fourth_link();
-	
-}
+		mp.To_click_right_arrowInPastEventsPage();
+	}
 
-@When("To click fifth link")
-public void to_click_fifth_link() throws InterruptedException {
-    
-	Thread.sleep(3000);
-	mp.click_fifth_link();
-	
-}
+	@Then("To click and check left arrow button")
+	public void to_click_and_check_left_arrow_button() throws InterruptedException {
 
-@Then("Validate the fifth link details should be displayed")
-public void validate_the_fifth_link_details_should_be_displayed() {
-    
-	
-	mp.validate_the_fifth_link();
-	
-	
-}
+		mp.To_click_checkleftarrow();
 
-@When("To click sixth link")
-public void to_click_sixth_link() throws InterruptedException {
-   
-	Thread.sleep(3000);
-	mp.click_sixth_link();
-}
+	}
 
-@Then("Valiadate the sixth link details should be displayed")
-public void valiadate_the_sixth_link_details_should_be_displayed() {
-    
-	mp.valiadate_the_sixth_link();
-	
-}
+	@Then("To validate twenty-twenty-two past events results")
+	public void to_validate_twenty_twenty_two_past_events_results() throws InterruptedException {
 
-@When("To click seventh link")
-public void to_click_seventh_link() throws InterruptedException {
-   
-	Thread.sleep(3000);
-	mp.click_seventh_link();
-	
-}
+		mp.To_validate_twenty_twenty_twopastEventsResults();
+	}
 
-@Then("Validate the seventh link details should be displayed")
-public void validate_the_seventh_link_details_should_be_displayed() {
-    
-	mp.validate_the_seventh_link_details();
-	
-	
-}
+	@Then("To validate twenty-twenty-one past events results")
+	public void to_validate_twenty_twenty_one_past_events_results() throws InterruptedException {
 
-@When("To click Eighth link")
-public void to_click_Eighth_link() throws InterruptedException {
-    
+		mp.To_validate_twentytwentyonePastEventsResults();
+	}
 	
-	Thread.sleep(3000);
-	mp. click_Eighth_link();
-	
-	
-}
+	@Then("To validate twenty-twenty past events results")
+	public void to_validate_twenty_twenty_past_events_results() {
 
-@Then("Validate the Eighth link details should be displayed")
-public void validate_the_Eighth_link_details_should_be_displayed() {
-    
-	
-	mp.validate_the_Eighth_link_details();
-	
-}
+		mp.To_validate_twentytwentyPastEventsResults();
+	}
 
-@When("To click nineth link")
-public void to_click_nineth_link() throws InterruptedException {
-	Thread.sleep(3000);
-	mp.click_nineth_link();
-	
-}
+	@Then("To validate twenty nineteen past events results")
+	public void to_validate_twenty_nineteen_past_events_results() throws InterruptedException {
 
-@Then("Validate the nineth link details should be displayed")
-public void validate_the_nineth_link_details_should_be_displayed() {
-    
-	mp.validate_the_nineth_link_details();
-	
-	
-}
+		mp.To_validate_twentyNineteenPastEventResults();
+	}
 
-@When("To click tenth link")
-public void to_click_tenth_link() throws InterruptedException {
-    
-	
-	Thread.sleep(3000);
-	mp.click_tenth_link();
-	
-}
+	@Then("To validate twenty eighteen past events results")
+	public void to_validate_twenty_eighteen_past_events_results() throws InterruptedException {
 
-@Then("Validate the tenth link details should be displayed")
-public void validate_the_tenth_link_details_should_be_displayed() {
-    
-	mp.validate_the_tenth_link();
-	
-}
+		mp.To_validate_twentyEighteenPastEventsResults();
+	}
 
-@When("To click Eleventh link")
-public void to_click_eleventh_link() throws InterruptedException {
-  
-	
-	Thread.sleep(3000);
-	mp.click_eleventh_link();
-	
-	
-}
+	@Then("To validate twenty seventeen past events results")
+	public void to_validate_twenty_seventeen_past_events_results() throws InterruptedException {
 
-@Then("Validate the eleventh link details should be displayed")
-public void validate_the_eleventh_link_details_should_be_displayed() {
-    
-	mp.validate_the_eleventh_link();
-	
-}
+		mp.to_validate_twenty_seventeen_past_events_results();
+	}
 
-@When("To click Twelth link")
-public void to_click_twelth_link() throws InterruptedException {
-    Thread.sleep(3000);
-	mp.click_twelth_link();
-	
-	
-}
+	@Then("To validate twenty sixteen past events results")
+	public void to_validate_twenty_sixteen_past_events_results() throws InterruptedException {
 
-@Then("Valiadate the  Twelth link details should be displayed")
-public void valiadate_the_twelth_link_details_should_be_displayed() {
-    
+		mp.To_validate_twentySixteenPastEventsResults();
+	}
+
+	@Then("To validate twenty fifteen past events results")
+	public void to_validate_twenty_fifteen_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyFifteenPastEventsResults();
+	}
+
+	@Then("To validate twenty fourteen past events results")
+	public void to_validate_twenty_fourteen_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyFourteenPastEventsResults();
+	}
+
+	@Then("To validate twenty thirteen past events results")
+	public void to_validate_twenty_thirteen_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyThirteenPastEventsResults();
+	}
 	
-	mp.valiadate_the_twelth_link_details();
+	@Then("To validate twenty-twelve past events results")
+	public void to_validate_twenty_twelve_past_events_results() {
+
+		mp.To_validate_twentytwelvePastEventsResults();
+	}
+
+	@Then("To validate twenty eleven past events results")
+	public void to_validate_twenty_eleven_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyElevenPastEventsResults();
+	}
 	
-}
+	@Then("To validate twenty-ten past events results")
+	public void to_validate_twenty_ten_past_events_results() {
+
+		mp.To_validate_twentytenPastEventsResults();
+	}
+
+
+	@Then("To validate twenty nine past events results")
+	public void to_validate_twenty_nine_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyNinePastEventsResults();
+	}
+
+	@Then("To validate twenty eight past events results")
+	public void to_validate_twenty_eight_past_events_results() throws InterruptedException {
+
+		mp.To_validate_twentyEightPastEventsResults();
+	}
+
+	// To validate the Press Releases Functionality
+	// ----------------------------------------------------------------------------------------------------
+
+	@When("To click the Press Releases link")
+	public void to_click_the_press_releases_link() {
+
+		mp.click_press_releases_link();
+
+	}
+
+	@When("TO click the first link")
+	public void to_click_the_first_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_the_first_link();
+
+	}
+
+	@Then("Validate the first link details should be displayed")
+	public void validate_the_first_link_details_should_be_displayed() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		mp.validate_the_first_link_details();
+
+	}
+
+	@When("To click the second link")
+	public void to_click_the_second_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_the_second_link();
+
+	}
+
+	@Then("Validate the second link details should be displayed")
+	public void validate_the_second_link_details_should_be_displayed() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		mp.validate_the_second_link_details();
+
+	}
+
+	@When("To click third link")
+	public void to_click_third_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_third_link();
+
+	}
+
+	@Then("Validate the third link details should be displayed")
+	public void validate_the_third_link_details_should_be_displayed() throws InterruptedException {
+
+		Thread.sleep(2000);
+
+		mp.validate_the_third_link();
+
+	}
+
+	@When("To click fourth link")
+	public void to_click_fourth_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_fourth_link();
+
+	}
+
+	@Then("Validate the fourth link details should be displayed")
+	public void validate_the_fourth_link_details_should_be_displayed() throws InterruptedException {
+
+		Thread.sleep(2000);
+		mp.validate_the_fourth_link();
+
+	}
+
+	@When("To click fifth link")
+	public void to_click_fifth_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_fifth_link();
+
+	}
+
+	@Then("Validate the fifth link details should be displayed")
+	public void validate_the_fifth_link_details_should_be_displayed() {
+
+		mp.validate_the_fifth_link();
+
+	}
+
+	@When("To click sixth link")
+	public void to_click_sixth_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_sixth_link();
+	}
+
+	@Then("Valiadate the sixth link details should be displayed")
+	public void valiadate_the_sixth_link_details_should_be_displayed() {
+
+		mp.valiadate_the_sixth_link();
+
+	}
+
+	@When("To click seventh link")
+	public void to_click_seventh_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_seventh_link();
+
+	}
+
+	@Then("Validate the seventh link details should be displayed")
+	public void validate_the_seventh_link_details_should_be_displayed() {
+
+		mp.validate_the_seventh_link_details();
+
+	}
+
+	@When("To click Eighth link")
+	public void to_click_Eighth_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_Eighth_link();
+
+	}
+
+	@Then("Validate the Eighth link details should be displayed")
+	public void validate_the_Eighth_link_details_should_be_displayed() {
+
+		mp.validate_the_Eighth_link_details();
+
+	}
+
+	@When("To click nineth link")
+	public void to_click_nineth_link() throws InterruptedException {
+		Thread.sleep(3000);
+		mp.click_nineth_link();
+
+	}
+
+	@Then("Validate the nineth link details should be displayed")
+	public void validate_the_nineth_link_details_should_be_displayed() {
+
+		mp.validate_the_nineth_link_details();
+
+	}
+
+	@When("To click tenth link")
+	public void to_click_tenth_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_tenth_link();
+
+	}
+
+	@Then("Validate the tenth link details should be displayed")
+	public void validate_the_tenth_link_details_should_be_displayed() {
+
+		mp.validate_the_tenth_link();
+
+	}
+
+	@When("To click Eleventh link")
+	public void to_click_eleventh_link() throws InterruptedException {
+
+		Thread.sleep(3000);
+		mp.click_eleventh_link();
+
+	}
+
+	@Then("Validate the eleventh link details should be displayed")
+	public void validate_the_eleventh_link_details_should_be_displayed() {
+
+		mp.validate_the_eleventh_link();
+
+	}
+
+	@When("To click Twelth link")
+	public void to_click_twelth_link() throws InterruptedException {
+		Thread.sleep(3000);
+		mp.click_twelth_link();
+
+	}
+
+	@Then("Valiadate the  Twelth link details should be displayed")
+	public void valiadate_the_twelth_link_details_should_be_displayed() {
+
+		mp.valiadate_the_twelth_link_details();
+
+	}
 
 //-----------------------------------------------------------------------------------------------------------------
 
 //validate the Insights functionalty
 
+	@When("To click the Insights link")
+	public void to_click_the_insights_link() throws InterruptedException {
 
+		mp.click_the_insights_link();
 
-@When("To click the Insights link")
-public void to_click_the_insights_link() throws InterruptedException {
-	
-	mp.click_the_insights_link();
-   
-}
-@When("To click link in Insights page")
-public void to_click_link_in_insights_page() {
-	
-	mp.click_link_in_insights();
-    
-}
-@Then("Validate the trade page")
-public void validate_the_trade_page() {
-	
-	
-	mp.validate_the_trade_page();
-    
-}
+	}
 
-	
-	
-	
-	
-	
-	
-	
-	
+	@When("To click link in Insights page")
+	public void to_click_link_in_insights_page() {
+
+		mp.click_link_in_insights();
+
+	}
+
+	@Then("Validate the trade page")
+	public void validate_the_trade_page() {
+
+		mp.validate_the_trade_page();
+
+	}
 
 }

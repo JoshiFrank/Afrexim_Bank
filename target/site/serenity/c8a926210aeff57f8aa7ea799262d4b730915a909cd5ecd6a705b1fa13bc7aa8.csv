@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"To test the forgot password functionality","To validate the forgot password functionality with valid and invalid credentials.","ERROR","2023-08-07T13:19:17.48+05:30[Asia/Calcutta]","0.0","84.75"
+"To test the Knowledge&Research option","To Validate the Knowledge&Research dropdown","ERROR","2023-08-29T13:55:45.9501792+05:30[Asia/Calcutta]","0.0","4.36"
+"To test the Knowledge&Research option","To Validate Knowledge_AboutUs Functionality","ERROR","2023-08-29T13:55:50.3980942+05:30[Asia/Calcutta]","0.0","85.23"
+"To Test the Our Bank Option in the home page","To validate the drop down","ERROR","2023-08-29T14:16:15.2612004+05:30[Asia/Calcutta]","0.0","3.11"
+"To validate the Functionality of Investers Option in Afrexim Bank","To Test the Investers dropdown","ERROR","2023-08-29T14:28:05.6282411+05:30[Asia/Calcutta]","0.0","1.74"

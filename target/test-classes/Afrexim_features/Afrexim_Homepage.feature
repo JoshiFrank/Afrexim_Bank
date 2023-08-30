@@ -1,4 +1,4 @@
-@homepage
+@regression
 Feature: To test the Homepage functionality
 
 Scenario: To validate the Afrexim Bank Logo

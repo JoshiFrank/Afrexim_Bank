@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"To test the Media option","To Validate the Media dropdown","SUCCESS","2023-08-07T13:21:13.917+05:30[Asia/Calcutta]","0.0","22.4"
+"To test the Media option","To Validate the Media dropdown","SUCCESS","2023-08-29T14:02:44.7623335+05:30[Asia/Calcutta]","0.0","56.83"
+"To test the Media option","To validate the past events functionality","SUCCESS","2023-08-29T14:05:51.7764658+05:30[Asia/Calcutta]","0.0","261.5"
+"To test the Media option","To validate the Insights functionalty","SUCCESS","2023-08-29T14:13:57.0632408+05:30[Asia/Calcutta]","0.0","34.14"

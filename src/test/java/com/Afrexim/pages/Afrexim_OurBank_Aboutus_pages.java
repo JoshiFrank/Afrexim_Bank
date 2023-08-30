@@ -16,7 +16,7 @@ public class Afrexim_OurBank_Aboutus_pages extends PageObject {
 	@Step
 	public void To_click_the_Our_Bank_Option() {
 
-		$(By.xpath("(//span[text()='Our Bank'])[1]")).click();
+		$(By.xpath("//*[@id='menu-item-53']/span")).click();
 
 	}
 
