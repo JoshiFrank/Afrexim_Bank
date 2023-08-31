@@ -1,5 +1,6 @@
 package com.Afrexim.steps;
 
+import java.awt.AWTException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -89,7 +90,7 @@ public class Afrexim_Media_steps {
 	}
 
 	@Then("To click twenty-twenty two year")
-	public void to_click_twenty_twenty_two_year() throws InterruptedException {
+	public void to_click_twenty_twenty_two_year() throws InterruptedException, AWTException {
 
 		mp.click_twentytwentytwoyear();
 	}
@@ -141,7 +142,7 @@ public class Afrexim_Media_steps {
 	}
 
 	@Then("To click twenty-eighteen year")
-	public void to_click_twenty_eighteen_year() {
+	public void to_click_twenty_eighteen_year() throws AWTException {
 
 		mp.click_twentyeighteen_year();
 	}

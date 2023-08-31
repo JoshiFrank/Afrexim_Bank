@@ -14,3 +14,25 @@ Examples:
 
 |username|password|
 |test@gmail.com|test123|
+
+
+
+
+
+
+
+@New
+Scenario: To validate Afreximbank Products Brouchures
+
+Given To open the Afrexim application
+When To click the Apply for facility option
+And Click Afreximbank Products brouchers
+Then Validate Afreximbank Products brouchers page
+And Click The Afreximbanker newsletter Edition two
+Then Validate The Afreximbanker newsletter Edition two
+And Click right arrow in brouchers page
+And Click African Quality Assurance centres
+Then Validate African Quality Assurance centres page
+And Click right arrow in brouchers page
+When Navigate to back
+And Click Load more in brouchers page

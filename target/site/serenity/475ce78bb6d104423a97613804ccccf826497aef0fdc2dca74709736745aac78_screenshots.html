@@ -149,7 +149,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-08-2023 14:03</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 31-08-2023 16:01</span>
     <br style="clear:left"/>
 </div>
 
@@ -178,6 +178,12 @@
                         <td valign="top" align="right">
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="1d0c02fb9cb969bbd9e2f900ec6333e01b070c6fb5e26345e9374169cfab9e68.html">Regression
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
                                     <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
                                 </a>
                                 </span>
@@ -202,9 +208,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">To validate the news functionality
+                                <span class="error-color">To validate the news functionality
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -226,7 +232,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
@@ -242,60 +248,173 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.Afrexim.pages.Afrexim_Media_pages.click_twentytwentytwoyear(Afrexim_Media_pages.java:128)<br />com.Afrexim.steps.Afrexim_Media_steps.to_click_twenty_twenty_two_year(Afrexim_Media_steps.java:94)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br /></pre>
+                        <pre>com.Afrexim.pages.Afrexim_Media_pages.Scrolldown_clickLoadmore(Afrexim_Media_pages.java:102)<br />com.Afrexim.steps.Afrexim_Media_steps.scroll_down_and_click_load_more(Afrexim_Media_steps.java:82)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br />org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.id: //*[@id='load_all_research_publications_year_2022'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>com.Afrexim.pages.Afrexim_Media_pages.click_twentytwentytwoyear(Afrexim_Media_pages.java :128)<br />com.Afrexim.steps.Afrexim_Media_steps.to_click_twenty_twenty_two_year(Afrexim_Media_steps.java :94)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java :130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java :23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java :130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java :137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :51)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
                     <div class="panel-body">
-                        <a href="pagesource2221143925307297027.html" target="_blank" class="btn btn-info">HTML Source</a>
+                        <a href="pagesource6162665953617866481.html" target="_blank" class="btn btn-info">HTML Source</a>
                     </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f8504c97b2b714054b75fd4f0608529b3d810cae099dc037470319a7b0e39e51.png" title=" Given To open the Afrexim application" width="1920"/>
-                <img src="bc7996fe7d0e6ba29653f109ccfe2907fbcd9c21606294ec3bb96a06cf6a4e05.png" title=" When To click the Media option" width="1920"/>
-                <img src="bc7996fe7d0e6ba29653f109ccfe2907fbcd9c21606294ec3bb96a06cf6a4e05.png" title=" Click mediaoption" width="1920"/>
-                <img src="bc7996fe7d0e6ba29653f109ccfe2907fbcd9c21606294ec3bb96a06cf6a4e05.png" title=" When To click the Media option (completed)" width="1920"/>
+                <img src="dc61bbbe3b81c2812c00a36fd8c9129c1cac5026a851bb0a073ed749016831e0.png" title=" Given To open the Afrexim application" width="1920"/>
+                <img src="9cb85ab4dd9aa6d46b6107f04104e99d76d03fa5ad08eb82e0d98fb54e6332f3.png" title=" When To click the Media option" width="1920"/>
+                <img src="9cb85ab4dd9aa6d46b6107f04104e99d76d03fa5ad08eb82e0d98fb54e6332f3.png" title=" Click mediaoption" width="1920"/>
                 <img src="f373c3cbcf02764c08f99621211b525ccebd42797928975409dfdaaea4987fc9.png" title=" And To click the news option" width="1920"/>
                 <img src="f373c3cbcf02764c08f99621211b525ccebd42797928975409dfdaaea4987fc9.png" title=" Click newsoption" width="1920"/>
-                <img src="f373c3cbcf02764c08f99621211b525ccebd42797928975409dfdaaea4987fc9.png" title=" And To click the news option (completed)" width="1920"/>
                 <img src="f373c3cbcf02764c08f99621211b525ccebd42797928975409dfdaaea4987fc9.png" title=" Then To validate the News Articles page" width="1920"/>
                 <img src="f373c3cbcf02764c08f99621211b525ccebd42797928975409dfdaaea4987fc9.png" title=" Validate news articlespage" width="1920"/>
-                <img src="58808aec2118cceaa36cef6a82ac0bdda6b6b27b54d51110ca633c08c9b8dbcc.png" title=" And To click right arrow and check whether years from twenty- twenty three to twenty-eight are present" width="1920"/>
-                <img src="58808aec2118cceaa36cef6a82ac0bdda6b6b27b54d51110ca633c08c9b8dbcc.png" title=" Validate rightarrow yearspresent" width="1920"/>
-                <img src="58808aec2118cceaa36cef6a82ac0bdda6b6b27b54d51110ca633c08c9b8dbcc.png" title=" And To click right arrow and check whether years from twenty- twenty three to twenty-eight are present (completed)" width="1920"/>
-                <img src="40fe40a0d5fea39b6c4de6fe022d4bdb247c41db08eeca59bba1ce419adc6d2f.png" title=" And To click and check left arrow" width="1920"/>
-                <img src="40fe40a0d5fea39b6c4de6fe022d4bdb247c41db08eeca59bba1ce419adc6d2f.png" title=" Click check leftarrow" width="1920"/>
-                <img src="ba4ede97e6bf726415e7b2a3506b0982912b87c51d5585c48a89c2897e21c391.png" title=" Click check leftarrow (completed)" width="1920"/>
-                <img src="ba4ede97e6bf726415e7b2a3506b0982912b87c51d5585c48a89c2897e21c391.png" title=" And To click and check left arrow (completed)" width="1920"/>
-                <img src="e46b3b121a8d5447916b4b9aa531741003c73d6189ea782f321a4fef3b293b21.png" title=" And To click twenty-twenty three year" width="1920"/>
-                <img src="e46b3b121a8d5447916b4b9aa531741003c73d6189ea782f321a4fef3b293b21.png" title=" Click twentytwentythreeyear" width="1920"/>
-                <img src="e31acf0cb9d80157363d0c541ff2fbaaea4c9e8fe7ac37915cb8adc76535d171.png" title=" Click twentytwentythreeyear (completed)" width="1920"/>
-                <img src="e31acf0cb9d80157363d0c541ff2fbaaea4c9e8fe7ac37915cb8adc76535d171.png" title=" And To click twenty-twenty three year (completed)" width="1920"/>
+                <img src="0f574ec955f17ebb5e47f787fd5d6abfad04b7afdf865d0d3d03c444657e93a6.png" title=" And To click right arrow and check whether years from twenty- twenty three to twenty-eight are present" width="1920"/>
+                <img src="0f574ec955f17ebb5e47f787fd5d6abfad04b7afdf865d0d3d03c444657e93a6.png" title=" Validate rightarrow yearspresent" width="1920"/>
+                <img src="0f574ec955f17ebb5e47f787fd5d6abfad04b7afdf865d0d3d03c444657e93a6.png" title=" And To click right arrow and check whether years from twenty- twenty three to twenty-eight are present (completed)" width="1920"/>
+                <img src="e46b3b121a8d5447916b4b9aa531741003c73d6189ea782f321a4fef3b293b21.png" title=" And To click and check left arrow" width="1920"/>
+                <img src="e46b3b121a8d5447916b4b9aa531741003c73d6189ea782f321a4fef3b293b21.png" title=" Click check leftarrow" width="1920"/>
+                <img src="e46b3b121a8d5447916b4b9aa531741003c73d6189ea782f321a4fef3b293b21.png" title=" And To click and check left arrow (completed)" width="1920"/>
+                <img src="ffdf01c2cb61a3e2e46187a8674b40befec2ee45e48b3dbc13909f8372b5e864.png" title=" And To click twenty-twenty three year" width="1920"/>
+                <img src="ffdf01c2cb61a3e2e46187a8674b40befec2ee45e48b3dbc13909f8372b5e864.png" title=" Click twentytwentythreeyear" width="1920"/>
+                <img src="ffdf01c2cb61a3e2e46187a8674b40befec2ee45e48b3dbc13909f8372b5e864.png" title=" And To click twenty-twenty three year (completed)" width="1920"/>
                 <img src="8b76fb3e6d480932da3e7870b6c6be1f5ab474ac74c3e86be5595f3e70f88295.png" title=" And Scroll down and click Load more" width="1920"/>
                 <img src="8b76fb3e6d480932da3e7870b6c6be1f5ab474ac74c3e86be5595f3e70f88295.png" title=" Scrolldown click loadmore" width="1920"/>
-                <img src="f351cd93aa872b8d28cee856edb2b4b018464e16fe68ce028ee531268881f4b1.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
-                <img src="f351cd93aa872b8d28cee856edb2b4b018464e16fe68ce028ee531268881f4b1.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
-                <img src="982d4a88d26e050d13a6e390771addead44d932c632adeb7a5b7b2b258ef8f3a.png" title=" Then Validate twenty-twenty three news results" width="1920"/>
-                <img src="982d4a88d26e050d13a6e390771addead44d932c632adeb7a5b7b2b258ef8f3a.png" title=" Validate twentytwentythree newsresults" width="1920"/>
-                <img src="494d9391314e4c6f208774b36b33f74d4bcb50488d39f6d4fb5a673c208b8dc5.png" title=" Validate twentytwentythree newsresults (completed)" width="1920"/>
-                <img src="494d9391314e4c6f208774b36b33f74d4bcb50488d39f6d4fb5a673c208b8dc5.png" title=" Then Validate twenty-twenty three news results (completed)" width="1920"/>
-                <img src="494d9391314e4c6f208774b36b33f74d4bcb50488d39f6d4fb5a673c208b8dc5.png" title=" And To click twenty-twenty two year" width="1920"/>
-                <img src="494d9391314e4c6f208774b36b33f74d4bcb50488d39f6d4fb5a673c208b8dc5.png" title=" Click twentytwentytwoyear: <span class='failing-color'>FAILURE</span>" width="1920"/>
+                <img src="57f046c1d33fbb6b280513b3975e92d695fcf253b61f87e4026a1c489148c6bc.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="57f046c1d33fbb6b280513b3975e92d695fcf253b61f87e4026a1c489148c6bc.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="dd1022ce317b30585f8d0f600c2e22aad5e64a1ca99c224e57da0f06873fd397.png" title=" Then Validate twenty-twenty three news results" width="1920"/>
+                <img src="dd1022ce317b30585f8d0f600c2e22aad5e64a1ca99c224e57da0f06873fd397.png" title=" Validate twentytwentythree newsresults" width="1920"/>
+                <img src="29869586c73283cf7b8a518ee5b0891f1538f1cb7376345a8e94176a7fa72afd.png" title=" Then Validate twenty-twenty three news results" width="1920"/>
+                <img src="29869586c73283cf7b8a518ee5b0891f1538f1cb7376345a8e94176a7fa72afd.png" title=" Validate twentytwentythree newsresults (completed)" width="1920"/>
+                <img src="759b844194525a0df8d5dbf6fac41cba3f9755fec972ce9fe5da84da2d4de5d1.png" title=" And To click twenty-twenty two year" width="1920"/>
+                <img src="759b844194525a0df8d5dbf6fac41cba3f9755fec972ce9fe5da84da2d4de5d1.png" title=" Click twentytwentytwoyear" width="1920"/>
+                <img src="759b844194525a0df8d5dbf6fac41cba3f9755fec972ce9fe5da84da2d4de5d1.png" title=" And To click twenty-twenty two year (completed)" width="1920"/>
+                <img src="8a58863f234166625ab946aa0d7d7a652dd5c2a8a837327fe69180ab4ba336ba.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="8a58863f234166625ab946aa0d7d7a652dd5c2a8a837327fe69180ab4ba336ba.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="6d2de1b1ac2ffaa8d37bb8ce5e2d97a3a08cf8ea2363048827d3227aa583f4a2.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="6d2de1b1ac2ffaa8d37bb8ce5e2d97a3a08cf8ea2363048827d3227aa583f4a2.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="2842cb30ac68baa1a0ba8ee888fbb30a58a1e7a754f1d85ae0b59f2d2c7a38f2.png" title=" Then Validate twenty-twenty two news results" width="1920"/>
+                <img src="2842cb30ac68baa1a0ba8ee888fbb30a58a1e7a754f1d85ae0b59f2d2c7a38f2.png" title=" Validate twentytwentytwo newsresults" width="1920"/>
+                <img src="2842cb30ac68baa1a0ba8ee888fbb30a58a1e7a754f1d85ae0b59f2d2c7a38f2.png" title=" Then Validate twenty-twenty two news results (completed)" width="1920"/>
+                <img src="b06335699d7b24637dd579a3b5f76150850fa37aeec4a4c56d6b27edb04a48bd.png" title=" And To click twenty-twenty one year" width="1920"/>
+                <img src="b06335699d7b24637dd579a3b5f76150850fa37aeec4a4c56d6b27edb04a48bd.png" title=" Click twentytwentyoneyear" width="1920"/>
+                <img src="b06335699d7b24637dd579a3b5f76150850fa37aeec4a4c56d6b27edb04a48bd.png" title=" And To click twenty-twenty one year (completed)" width="1920"/>
+                <img src="6ffb476a819e2c132279e01c6edfe2f4c6a9ee148cfc1d67aa2b71da742c8cd7.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="6ffb476a819e2c132279e01c6edfe2f4c6a9ee148cfc1d67aa2b71da742c8cd7.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="e249428c08bd22d524c18573d5904971bf5447edd98e42013f861024c3a57464.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="e249428c08bd22d524c18573d5904971bf5447edd98e42013f861024c3a57464.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="945129c961c1427f99e2776d19fb82e3833a296373990bfd7ab44cadfff24842.png" title=" Then Validate twenty-twenty one news results" width="1920"/>
+                <img src="945129c961c1427f99e2776d19fb82e3833a296373990bfd7ab44cadfff24842.png" title=" Validate twentytwentyone newsresults" width="1920"/>
+                <img src="8d35417be24a90e2bb89451132fe787f199697d2b1701738b8258025c568bdf0.png" title=" Then Validate twenty-twenty one news results" width="1920"/>
+                <img src="8d35417be24a90e2bb89451132fe787f199697d2b1701738b8258025c568bdf0.png" title=" Validate twentytwentyone newsresults (completed)" width="1920"/>
+                <img src="3e915fcf9f7d21d8ec547e025bac6e228eabd93e1353f59213af8740293d6a46.png" title=" And To click twenty-twenty year" width="1920"/>
+                <img src="3e915fcf9f7d21d8ec547e025bac6e228eabd93e1353f59213af8740293d6a46.png" title=" Click twentytwentyyear" width="1920"/>
+                <img src="3e915fcf9f7d21d8ec547e025bac6e228eabd93e1353f59213af8740293d6a46.png" title=" And To click twenty-twenty year (completed)" width="1920"/>
+                <img src="82f90a8ee9cb86150d86c5ff407924e762fd54cca6379d7badf78bbadc0d03e2.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="82f90a8ee9cb86150d86c5ff407924e762fd54cca6379d7badf78bbadc0d03e2.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="3cf60f313e5e6675392c856831dc05b12c96d830567e9775bd69adf987c7bf89.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="3cf60f313e5e6675392c856831dc05b12c96d830567e9775bd69adf987c7bf89.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="f3c3324e1f6866a749d0e9e43050b5a166119c9650413157fbd5df1c35065e48.png" title=" Then Validate twenty-twenty news results" width="1920"/>
+                <img src="f3c3324e1f6866a749d0e9e43050b5a166119c9650413157fbd5df1c35065e48.png" title=" Validate twentytwenty newsresults" width="1920"/>
+                <img src="f3c3324e1f6866a749d0e9e43050b5a166119c9650413157fbd5df1c35065e48.png" title=" Then Validate twenty-twenty news results (completed)" width="1920"/>
+                <img src="f49c9aad9cd2782144881edf7a5623b1e6bade3abd8f8f468e961f2919ae15c0.png" title=" And To click twenty-nineteen year" width="1920"/>
+                <img src="f49c9aad9cd2782144881edf7a5623b1e6bade3abd8f8f468e961f2919ae15c0.png" title=" Click twentynineteen year" width="1920"/>
+                <img src="f49c9aad9cd2782144881edf7a5623b1e6bade3abd8f8f468e961f2919ae15c0.png" title=" And To click twenty-nineteen year (completed)" width="1920"/>
+                <img src="f5a8262eb6d21e5890ee3cb373c081f95bfff63ddeda2f49f1c585d1954be82c.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="f5a8262eb6d21e5890ee3cb373c081f95bfff63ddeda2f49f1c585d1954be82c.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="15d5a71b977d361695ad3b5483a8a789b55e517afcb8e9e6a3d83a7d9f66beef.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="15d5a71b977d361695ad3b5483a8a789b55e517afcb8e9e6a3d83a7d9f66beef.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="3f6e8134b6158dee9819e385c025c9f9c5fb9ee4768544d5b4d260417b1ec7a1.png" title=" Then Validate twenty-nineteen news results" width="1920"/>
+                <img src="3f6e8134b6158dee9819e385c025c9f9c5fb9ee4768544d5b4d260417b1ec7a1.png" title=" Validate twentynineteen newsresults" width="1920"/>
+                <img src="3f6e8134b6158dee9819e385c025c9f9c5fb9ee4768544d5b4d260417b1ec7a1.png" title=" Then Validate twenty-nineteen news results (completed)" width="1920"/>
+                <img src="c4990c0bb416b0aaa7c556e4de16b245a3dd335f0b5a58e8f47e84eebf507dd2.png" title=" And To click twenty-eighteen year" width="1920"/>
+                <img src="c4990c0bb416b0aaa7c556e4de16b245a3dd335f0b5a58e8f47e84eebf507dd2.png" title=" Click twentyeighteen year" width="1920"/>
+                <img src="c4990c0bb416b0aaa7c556e4de16b245a3dd335f0b5a58e8f47e84eebf507dd2.png" title=" And To click twenty-eighteen year (completed)" width="1920"/>
+                <img src="cef74acbf2fdade9dc9bc68388f7d04b0bcd166875ce09d8bac3e17176d6cbca.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="cef74acbf2fdade9dc9bc68388f7d04b0bcd166875ce09d8bac3e17176d6cbca.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="a340e7a7d56ea720ef0d14a24118274df7da75ed58f7b025ba942ccb9be8450f.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="a340e7a7d56ea720ef0d14a24118274df7da75ed58f7b025ba942ccb9be8450f.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="5c50b3a1ba6ac876801e6627798928e1218b5109d320470ccaa7bfbfc8212a5f.png" title=" Then Validate twenty-eighteen news results" width="1920"/>
+                <img src="5c50b3a1ba6ac876801e6627798928e1218b5109d320470ccaa7bfbfc8212a5f.png" title=" Validate twentyeighteen newsresults" width="1920"/>
+                <img src="e355bb8b5d21b9e63d80d6bfb58d1f813030f7f252fb2b04510a1ed7425e6fad.png" title=" And To click twenty-seventeen year" width="1920"/>
+                <img src="e355bb8b5d21b9e63d80d6bfb58d1f813030f7f252fb2b04510a1ed7425e6fad.png" title=" Click twentyseventeen year" width="1920"/>
+                <img src="e355bb8b5d21b9e63d80d6bfb58d1f813030f7f252fb2b04510a1ed7425e6fad.png" title=" And To click twenty-seventeen year (completed)" width="1920"/>
+                <img src="068015352b728a42d67ec39bcdd5f42a4f4b9218b77087be79b03686c6ca8281.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="068015352b728a42d67ec39bcdd5f42a4f4b9218b77087be79b03686c6ca8281.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="267ad1d6991b16da99b4809d14aad6208a0b3a12f55fab45ae57e80cdca0f93c.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="267ad1d6991b16da99b4809d14aad6208a0b3a12f55fab45ae57e80cdca0f93c.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="d279e75efb757ed4db7f1fb912d5c9d1c6d48bdcace384fed84eaab1e08b67fc.png" title=" Then Validate twenty-seventeen news results" width="1920"/>
+                <img src="d279e75efb757ed4db7f1fb912d5c9d1c6d48bdcace384fed84eaab1e08b67fc.png" title=" Validate twentyseventeen newsresults" width="1920"/>
+                <img src="438352a748ea989da7e547706610c61d7f148ef1dd40d7ca80a9674252fbe362.png" title=" Validate twentyseventeen newsresults (completed)" width="1920"/>
+                <img src="438352a748ea989da7e547706610c61d7f148ef1dd40d7ca80a9674252fbe362.png" title=" Then Validate twenty-seventeen news results (completed)" width="1920"/>
+                <img src="36c564a716b9e83365801f4966e5c6b83e78dc745bcb92adc7ec8fe95a7f5ac9.png" title=" And To click twenty-sixteen year" width="1920"/>
+                <img src="36c564a716b9e83365801f4966e5c6b83e78dc745bcb92adc7ec8fe95a7f5ac9.png" title=" Click twentysixteen year" width="1920"/>
+                <img src="36c564a716b9e83365801f4966e5c6b83e78dc745bcb92adc7ec8fe95a7f5ac9.png" title=" And To click twenty-sixteen year (completed)" width="1920"/>
+                <img src="4fe737fabc3f6a5c74f2efd7c8cf9a46e8664159875d4f5824dfec537485f5ba.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="4fe737fabc3f6a5c74f2efd7c8cf9a46e8664159875d4f5824dfec537485f5ba.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="7707542354ab25fcaf0539cc336912c0e1bc796bc533a149723e58f9df90c8aa.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="7707542354ab25fcaf0539cc336912c0e1bc796bc533a149723e58f9df90c8aa.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="a08291188b16f2ec93f7219849eef8a08a881f38ccb6ec2d60f5c12fd73bee0b.png" title=" Then Validate twenty-sixteen news results" width="1920"/>
+                <img src="a08291188b16f2ec93f7219849eef8a08a881f38ccb6ec2d60f5c12fd73bee0b.png" title=" Validate twentysixteen newsresults" width="1920"/>
+                <img src="1dba4d87330c212c64f0fbd0c19e5cf2cc817ee5d95f791e0902e2719a7f174d.png" title=" Validate twentysixteen newsresults (completed)" width="1920"/>
+                <img src="1dba4d87330c212c64f0fbd0c19e5cf2cc817ee5d95f791e0902e2719a7f174d.png" title=" Then Validate twenty-sixteen news results (completed)" width="1920"/>
+                <img src="80f4ce1af8676c499ee1ffc5aea9c6e0df1dc2ab875b90e6bf6ba9a6388413f1.png" title=" And To click twenty-fifteen year" width="1920"/>
+                <img src="80f4ce1af8676c499ee1ffc5aea9c6e0df1dc2ab875b90e6bf6ba9a6388413f1.png" title=" Click twentyfifteenyear" width="1920"/>
+                <img src="80f4ce1af8676c499ee1ffc5aea9c6e0df1dc2ab875b90e6bf6ba9a6388413f1.png" title=" And To click twenty-fifteen year (completed)" width="1920"/>
+                <img src="cba35c80f492ab39afb32bb77670d9486a52fcd8583c9f126de3fb84631375a7.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="cba35c80f492ab39afb32bb77670d9486a52fcd8583c9f126de3fb84631375a7.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="1983ca3ffd245e69f06fb8a8f7060dfcf761da5ffb7dcfdc68ea47952b2e8eac.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="1983ca3ffd245e69f06fb8a8f7060dfcf761da5ffb7dcfdc68ea47952b2e8eac.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="9211ee794fad50a5401547f571331c22a70449f5a6545bbf6293f95f8130a6c8.png" title=" Then Validate twenty-fifteen news results" width="1920"/>
+                <img src="9211ee794fad50a5401547f571331c22a70449f5a6545bbf6293f95f8130a6c8.png" title=" Validate twentyfifteen newsresults" width="1920"/>
+                <img src="ca1f316e2e2506341e1ba040a11d9e823df01cc461443fadbcf532b577650ab0.png" title=" Then Validate twenty-fifteen news results" width="1920"/>
+                <img src="ca1f316e2e2506341e1ba040a11d9e823df01cc461443fadbcf532b577650ab0.png" title=" Validate twentyfifteen newsresults (completed)" width="1920"/>
+                <img src="4a76e4cac63781776c2152337e1a4c0f491edc81d5606ab96d2c2f7e0b36d814.png" title=" And To click twenty-fourteen year" width="1920"/>
+                <img src="4a76e4cac63781776c2152337e1a4c0f491edc81d5606ab96d2c2f7e0b36d814.png" title=" Click twentyfourteenyear" width="1920"/>
+                <img src="4a76e4cac63781776c2152337e1a4c0f491edc81d5606ab96d2c2f7e0b36d814.png" title=" And To click twenty-fourteen year (completed)" width="1920"/>
+                <img src="f62611c3068dc35fa282262a1ff07bdb72c09fc56cc9ec43abba71943ffbf663.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="f62611c3068dc35fa282262a1ff07bdb72c09fc56cc9ec43abba71943ffbf663.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="084d9076324e823b86632032cedbfd11835ac2bae75e07736cdac21ce4ed0896.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="084d9076324e823b86632032cedbfd11835ac2bae75e07736cdac21ce4ed0896.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="c4a9bb08ef3ffc573ed77f54ed26f4ca4afd44d491cc07e1bff07d62f2b58e1f.png" title=" Then Validate twenty-fourteen news results" width="1920"/>
+                <img src="c4a9bb08ef3ffc573ed77f54ed26f4ca4afd44d491cc07e1bff07d62f2b58e1f.png" title=" Validate twentyfourteen newsresults" width="1920"/>
+                <img src="6ce35b247a9942ad462703b6a05455ea7c04444e6bd6517128a1a63723bdb035.png" title=" And To click twenty-thirteen year" width="1920"/>
+                <img src="6ce35b247a9942ad462703b6a05455ea7c04444e6bd6517128a1a63723bdb035.png" title=" Click twentythirteenyear" width="1920"/>
+                <img src="6ce35b247a9942ad462703b6a05455ea7c04444e6bd6517128a1a63723bdb035.png" title=" And To click twenty-thirteen year (completed)" width="1920"/>
+                <img src="92700cd6a845d2560d2f3fd4d3d9c6125fe867e29b0c1ecea5c7a22bf98ceb97.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="92700cd6a845d2560d2f3fd4d3d9c6125fe867e29b0c1ecea5c7a22bf98ceb97.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="9e5ac8442613150f0a5280226af21807b7cd30647116c1a4500336b8a426fddc.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="9e5ac8442613150f0a5280226af21807b7cd30647116c1a4500336b8a426fddc.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="54cca5f9c19306327bae9ee242082807bc32b036a515821c33bf3f02836f92d6.png" title=" Then Validate twenty-thirteen news results" width="1920"/>
+                <img src="54cca5f9c19306327bae9ee242082807bc32b036a515821c33bf3f02836f92d6.png" title=" Validate twentythirteen newsresults" width="1920"/>
+                <img src="c43d531b37fb153045ceff540c4810692708df2e06bb013e7e7fe620e3f56007.png" title=" Then Validate twenty-thirteen news results" width="1920"/>
+                <img src="c43d531b37fb153045ceff540c4810692708df2e06bb013e7e7fe620e3f56007.png" title=" Validate twentythirteen newsresults (completed)" width="1920"/>
+                <img src="905584e661a5d440b0edfaf3b276c32f67caf9442bc5efbb572ca57ef59fbdc2.png" title=" And To click twenty-twelve year" width="1920"/>
+                <img src="905584e661a5d440b0edfaf3b276c32f67caf9442bc5efbb572ca57ef59fbdc2.png" title=" Click twentytwelveyear" width="1920"/>
+                <img src="905584e661a5d440b0edfaf3b276c32f67caf9442bc5efbb572ca57ef59fbdc2.png" title=" And To click twenty-twelve year (completed)" width="1920"/>
+                <img src="21f069caa0f9e414e580a08429cef66ff10cbb692dbdaeb417fabf726e441200.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="21f069caa0f9e414e580a08429cef66ff10cbb692dbdaeb417fabf726e441200.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="96ae76894c8c825f3e47011cd897b38b66199b43dd982ad11d0945d02292ce71.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="96ae76894c8c825f3e47011cd897b38b66199b43dd982ad11d0945d02292ce71.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="3393a88547e0d9e0b717ec9b2f242a88c1bdff1c04fa70ed2859f02922d3e4e9.png" title=" Then Validate twenty-twelve news results" width="1920"/>
+                <img src="3393a88547e0d9e0b717ec9b2f242a88c1bdff1c04fa70ed2859f02922d3e4e9.png" title=" Validate twentytwelve newsresults" width="1920"/>
+                <img src="8fbce5f8b05d25848814c52c5c656d02e05c26ebdb33af7c323f1a49753c8a64.png" title=" And To click twenty-eleven year" width="1920"/>
+                <img src="8fbce5f8b05d25848814c52c5c656d02e05c26ebdb33af7c323f1a49753c8a64.png" title=" Click twentyelevenyear" width="1920"/>
+                <img src="8fbce5f8b05d25848814c52c5c656d02e05c26ebdb33af7c323f1a49753c8a64.png" title=" And To click twenty-eleven year (completed)" width="1920"/>
+                <img src="ffa54bcf7b1972cbc22a423487e58c06f18ca438b9f5362483fe293508a14e2c.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="ffa54bcf7b1972cbc22a423487e58c06f18ca438b9f5362483fe293508a14e2c.png" title=" Scrolldown click loadmore" width="1920"/>
+                <img src="2ead39874f7bb19f05ba566cdd3b9feaa3edec0dd91338addc2e7e51cfa66007.png" title=" Scrolldown click loadmore (completed)" width="1920"/>
+                <img src="2ead39874f7bb19f05ba566cdd3b9feaa3edec0dd91338addc2e7e51cfa66007.png" title=" And Scroll down and click Load more (completed)" width="1920"/>
+                <img src="e3f1d8e630ee0883789859ea169a6b3725f5ee36a158f9d8f93527c6b0842baf.png" title=" Then Validate twenty-eleven news results" width="1920"/>
+                <img src="e3f1d8e630ee0883789859ea169a6b3725f5ee36a158f9d8f93527c6b0842baf.png" title=" Validate twentyeleven newsresults" width="1920"/>
+                <img src="f12b373b627a1906d68a2781f0b2914c71d83fc9db82890737bcb7b95135f966.png" title=" And To click twenty-ten year" width="1920"/>
+                <img src="f12b373b627a1906d68a2781f0b2914c71d83fc9db82890737bcb7b95135f966.png" title=" Click twentyten year" width="1920"/>
+                <img src="f12b373b627a1906d68a2781f0b2914c71d83fc9db82890737bcb7b95135f966.png" title=" And To click twenty-ten year (completed)" width="1920"/>
+                <img src="f12b373b627a1906d68a2781f0b2914c71d83fc9db82890737bcb7b95135f966.png" title=" And Scroll down and click Load more" width="1920"/>
+                <img src="89bd9c2dba39a04223a2a5bb79059124ba6efbf2c598338e648aa839fc19810c.png" title=" Scrolldown click loadmore: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

@@ -1,5 +1,8 @@
 package com.Afrexim.steps;
 
+import java.awt.AWTException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.Afrexim.pages.Afrexim_Investors_pages;
@@ -28,7 +31,7 @@ public class Afrexim_Investors_steps {
 	@Then("To validate the Investors dropdown")
 	public void to_validate_the_investors_dropdown() {
 
-	
+	inp.To_validate_theInvestorsDropdown();
 	}
 //-------------------------------------------------------------------------------------------
 	
@@ -37,30 +40,34 @@ public class Afrexim_Investors_steps {
 		@When("Clicks on the Financial Information under Investors")
 		public void clicks_on_the_financial_information_under_investors() {
 
-		
+		inp.Click_on_theFinancialInformationUnderInvestors();
 		}
 
 		@Then("Validate the Youtube video")
-		public void validate_the_youtube_video() {
+		public void validate_the_youtube_video() throws AWTException {
 
-		
+		inp.Validate_theYoutubeVideo();
 		}
 
 		@Then("Validate the image")
 		public void validate_the_image() {
 
-		
+		inp.Validate_theImage();
 		}
 
-		@When("To click right arrow and check whether years from twenty- twenty three to Nineteen ninety five are present")
-		public void to_click_right_arrow_and_check_whether_years_from_twenty_twenty_three_to_nineteen_ninety_five_are_present() {
-
 		
-		}
+		  @When("To click right arrow and check whether years from twenty- twenty three to Nineteen ninety five are present"
+		  ) public void
+		  to_click_right_arrow_and_check_whether_years_from_twenty_twenty_three_to_nineteen_ninety_five_are_present
+		  () {
+		  
+		  
+		  }
+		 
 
 		@When("Click Afreximbank Abridged Unaudited Financial Statements document")
 		public void click_afreximbank_abridged_unaudited_financial_statements_document() {
-
+inp.Click_Afreximbank_Abridged_Unaudited_FinancialStatementsDocument();
 		
 		}
 	
@@ -68,42 +75,48 @@ public class Afrexim_Investors_steps {
 		@Then("Validate Afreximbank Abridged Unaudited Financial Statements document")
 		public void validate_afreximbank_abridged_unaudited_financial_statements_document() {
 
+			inp.Validate_Afreximbank_Abridged_Unaudited_FinancialStatementsDocument();
 		}
 
 		@Then("Validate Afreximbank Abridged Unaudited Financial Statements download pdf")
 		public void validate_afreximbank_abridged_unaudited_financial_statements_download_pdf() {
 
+			
 		
 		}
 
 		@Then("Click Annual report twenty twenty two document")
 		public void click_annual_report_twenty_twenty_two_document() {
 
-		
+	inp.Click_Annual_report_TwentyTwentyTwoDocument();
 		}
 
 		@Then("Validate Annual report twenty twenty two document")
 		public void validate_annual_report_twenty_twenty_two_document() {
 
 		
+			
+			inp.Validate_Annual_report_TwentyTwentyTwoDocument();
+			
 		}
 
 		@Then("Validate Annual report twenty twenty two download pdf")
 		public void validate_annual_report_twenty_twenty_two_download_pdf() {
 
 		
+			
 		}
 
 		@Then("Click Annual Report twenty twenty one document")
 		public void click_annual_report_twenty_twenty_one_document() {
 
-		
+		inp.Click_Annual_Report_TwentyTwentyOneDocument();
 		}
 	
 		@Then("Validate Annual Report twenty twenty one document")
 		public void validate_annual_report_twenty_twenty_one_document() {
 
-		
+		inp.Validate_Annual_Report_TwentyTwentyOneDocument();
 		}
 
 		@Then("Validate Annual Report twenty twenty one download pdf")
@@ -114,14 +127,15 @@ public class Afrexim_Investors_steps {
 
 		@Then("Click Afreximbank Nine Months twenty twenty Results Presentation document")
 		public void click_afreximbank_nine_months_twenty_twenty_results_presentation_document() {
-
+			
+inp.Click_Afreximbank_Nine_Months_TwentyTwentyResultsPresentationDocument();
 		
 		}
 
 		@Then("Validate Afreximbank Nine Months twenty twenty Results Presentation document")
 		public void validate_afreximbank_nine_months_twenty_twenty_results_presentation_document() {
 
-		
+		inp.Validate_Afreximbank_Nine_MonthsTwentyTwentyResultsPresentationDocument();
 		}
 	
 	
@@ -135,12 +149,14 @@ public class Afrexim_Investors_steps {
 		@Then("Click ANNUAL REPORT twenty nineteen document")
 		public void click_annual_report_twenty_nineteen_document() {
 
-		
+		inp.Click_ANNUAL_REPORT_TwentyNineteenDocument();
 		}
 
 		@Then("Validate ANNUAL REPORT twenty nineteen document")
 		public void validate_annual_report_twenty_nineteen_document() {
 
+			
+			inp.Validate_ANNUAL_REPORT_TwentyNineteenDocument();
 		
 		}
 
@@ -149,29 +165,27 @@ public class Afrexim_Investors_steps {
 
 		
 		}
-		@Then("Click Moody s rating report twenty eighteen document")
+		@When("Click Moody’s rating report twenty eighteen document")
 		public void click_moody_s_rating_report_twenty_eighteen_document() {
-
-		
+			
+			inp.Click_Moody_s_rating_report_twentyEighteenDocument();
+		    
 		}
-
-		@Then("Validate Moody s rating report twenty eighteen document")
+		@Then("Validate Moody’s rating report twenty eighteen document")
 		public void validate_moody_s_rating_report_twenty_eighteen_document() {
-
+			
+			inp.Validate_Moody_s_rating_report_twentyEighteenDocument();
+			
+		    
+		}
 		
-		}
-
-		@Then("Validate Moody s rating report twenty eighteen download pdf")
-		public void validate_moody_s_rating_report_twenty_eighteen_download_pdf() {
-
-		}
 	
 	
 		
 		
 		
 		
-		//-----
+		//--------------------------------------------------------------------------------------------
 	
 	
 	
@@ -301,5 +315,43 @@ public class Afrexim_Investors_steps {
 		}
 	
 
+		
+		
+		
+		
+//------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		
+		
+		
+		
+		@When("Click FAQs Option")
+		public void click_fa_qs_option() {
+			
+			inp.click_faqs_option();
+		    
+		}
+
+		@Then("Validate FAQs page")
+		public void validate_fa_qs_page() {
+			
+			inp.validate_faqs_page();
+		    
+		}
+
+		@Then("Click General capital increase FAQs")
+		public void click_general_capital_increase_fa_qs() {
+			
+			inp.click_general_capital_increase_faqs();
+		    
+		}
+
+		
+		
+		
+		
+		
+		
+		
 
 }

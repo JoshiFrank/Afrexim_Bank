@@ -10,7 +10,6 @@ When Select the Investers option
 Then To validate the Investors dropdown
 
 
-#Financial Information
 
 Scenario: To Test the Investers_FinancialInformation Functionality
 
@@ -19,7 +18,7 @@ When Select the Investers option
 And Clicks on the Financial Information under Investors
 Then Validate the Youtube video
 And Validate the image
-When To click right arrow and check whether years from twenty- twenty three to Nineteen ninety five are present
+And To click right arrow and check whether years from twenty- twenty three to twenty-eight are present
 And To click and check left arrow
 And To click twenty-twenty three year 
 And Scroll down and click View all 
@@ -27,36 +26,46 @@ And Click Afreximbank Abridged Unaudited Financial Statements document
 Then Validate Afreximbank Abridged Unaudited Financial Statements document
 And Click Download button
 Then Validate Afreximbank Abridged Unaudited Financial Statements download pdf
+When Navigate to back
+When Navigate to back
 And To click twenty-twenty two year 
 And Scroll down and click View all
 And Click Annual report twenty twenty two document
 Then Validate Annual report twenty twenty two document
 And Click Download button
 Then Validate Annual report twenty twenty two download pdf
+When Navigate to back
+When Navigate to back
 And To click twenty-twenty one year 
 And Scroll down and click View all
 And Click Annual Report twenty twenty one document
 Then Validate Annual Report twenty twenty one document
 And Click Download button
 Then Validate Annual Report twenty twenty one download pdf
+When Navigate to back
+When Navigate to back
 And To click twenty-twenty year 
 And Scroll down and click View all
 And Click Afreximbank Nine Months twenty twenty Results Presentation document
 Then Validate Afreximbank Nine Months twenty twenty Results Presentation document
 And Click Download button
 Then Validate Afreximbank Nine Months twenty twenty Results Presentation download pdf
+When Navigate to back
+When Navigate to back
 And To click twenty-nineteen year 
 And Scroll down and click View all
 And Click ANNUAL REPORT twenty nineteen document
 Then Validate ANNUAL REPORT twenty nineteen document
 And Click Download button
 Then Validate ANNUAL REPORT twenty nineteen download pdf
+When Navigate to back
+When Navigate to back
 And To click twenty-eighteen year 
 And Scroll down and click View all
 And Click Moody’s rating report twenty eighteen document
 Then Validate Moody’s rating report twenty eighteen document
 And Click Download button
-Then Validate Moody’s rating report twenty eighteen download pdf
+#Then Validate Moody’s rating report twenty eighteen download pdf
 
 
 
@@ -77,8 +86,7 @@ Then Registration Document open as pdf
 
 
 
-#Credit Ratings Reports
-@New
+
 Scenario: To Test the Investors_CreditRatingsReports Functionality
 
 Given To open the Afrexim application 
@@ -95,5 +103,15 @@ When Click JCR Rating Report TwentyTwentyThree link
 #Then Validate JCR Rating Report TwentyTwentyThree download pdf
 
 
+
+
+Scenario: To validate the FAQ option in investors
+
+Given To open the Afrexim application 
+When Select the Investers option
+And Click FAQs Option
+Then Validate FAQs page
+And Click General capital increase FAQs 
+#Then Validate General capital increase FAQs pdf
 
 

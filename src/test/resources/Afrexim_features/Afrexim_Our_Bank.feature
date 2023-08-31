@@ -14,6 +14,8 @@ Then To validate Our Bank dropdown
 #And To Select the About Us Functionality
 #Then To validate the About us page
 #And To click Read more in Organisational Structure
+#The To validate Organisational structure page
+#And 
 
 
 Scenario: To validate About us tables

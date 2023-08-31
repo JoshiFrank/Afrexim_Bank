@@ -1,5 +1,9 @@
 package com.Afrexim.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -35,11 +39,20 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_on_theFinancialInformationUnderInvestors() {
 
+		$(By.xpath("(//a[text()='Financial Information'])[1]")).click();
+
 	}
 
 	// Validate the Youtube video
 	@Step
-	public void Validate_theYoutubeVideo() {
+	public void Validate_theYoutubeVideo() throws AWTException {
+
+		Robot r = new Robot();
+
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+
+		$(By.xpath("//div[@class='video-container03']")).isDisplayed();
 
 	}
 
@@ -47,10 +60,13 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Validate_theImage() {
 
+		$(By.xpath("//h2[text()='Key Facts and Figures as at 30 June 2023']")).isDisplayed();
+
 	}
 
 	// To click right arrow and check whether years from twenty- twenty three to
 	// Nineteen ninety five are present")
+
 	@Step
 	public void To_click_right_arrow_and_check_whether_years_from_twenty_twenty_three_to_NineteenNinetyFiveArePresent() {
 
@@ -60,12 +76,16 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_Afreximbank_Abridged_Unaudited_FinancialStatementsDocument() {
 
+		$(By.partialLinkText("Afreximbank Abridged Unaudited")).click();
 	}
 
 	// Validate Afreximbank Abridged Unaudited Financial Statements document")
 	@Step
 	public void Validate_Afreximbank_Abridged_Unaudited_FinancialStatementsDocument() {
 
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("Afreximbank Abridged Unaudited Financial Statements – H1 30 June 2023", text);
 	}
 
 	// Validate Afreximbank Abridged Unaudited Financial Statements download pdf
@@ -78,11 +98,17 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_Annual_report_TwentyTwentyTwoDocument() {
 
+		$(By.linkText("Annual report 2022")).click();
+
 	}
 
 	// Validate Annual report twenty twenty two document
 	@Step
 	public void Validate_Annual_report_TwentyTwentyTwoDocument() {
+
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("Annual report 2022", text);
 
 	}
 
@@ -96,12 +122,17 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_Annual_Report_TwentyTwentyOneDocument() {
 
+		$(By.linkText("Annual Report 2021")).click();
 	}
 
 	// Validate Annual Report twenty twenty one document
 	@Step
 	public void Validate_Annual_Report_TwentyTwentyOneDocument() {
 
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("Annual Report 2021", text);
+		
 	}
 
 	// Validate Annual Report twenty twenty one download pdf
@@ -114,12 +145,18 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_Afreximbank_Nine_Months_TwentyTwentyResultsPresentationDocument() {
 
+		
+		$(By.linkText("Afreximbank Nine Months 2020 Results Presentation")).click();
 	}
 
 	// Validate Afreximbank Nine Months twenty twenty Results Presentation document
 	@Step
 	public void Validate_Afreximbank_Nine_MonthsTwentyTwentyResultsPresentationDocument() {
 
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("Afreximbank Nine Months 2020 Results Presentation", text);
+		
 	}
 
 	// Validate Afreximbank Nine Months twenty twenty Results Presentation download
@@ -133,12 +170,17 @@ public class Afrexim_Investors_pages extends PageObject {
 	@Step
 	public void Click_ANNUAL_REPORT_TwentyNineteenDocument() {
 
+		$(By.linkText("ANNUAL REPORT 2019")).click();
 	}
 
 	// Validate ANNUAL REPORT twenty nineteen document
 	@Step
 	public void Validate_ANNUAL_REPORT_TwentyNineteenDocument() {
 
+		
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("ANNUAL REPORT 2019",text);
 	}
 
 	// Validate ANNUAL REPORT twenty nineteen download pdf
@@ -150,12 +192,17 @@ public class Afrexim_Investors_pages extends PageObject {
 	// Click Moody s rating report twenty eighteen document
 	@Step
 	public void Click_Moody_s_rating_report_twentyEighteenDocument() {
+		
+$(By.linkText("Moody's rating report 2018")).click();
 
 	}
 
 	// Validate Moody s rating report twenty eighteen document
 	public void Validate_Moody_s_rating_report_twentyEighteenDocument() {
 
+		String text = $(By.xpath("//h1[@class='entry-title']")).getText();
+
+		Assert.assertEquals("Moody’s rating report 2018",text);
 	}
 
 	// Validate Moody s rating report twenty eighteen download pdf
@@ -306,5 +353,46 @@ public class Afrexim_Investors_pages extends PageObject {
 	public void ValidateJCRRatingReportTwentyTwentyThreedownloadPdf() {
 
 	}
+//-------------------------------------------------------------------------------------------------------------------
+	
+	
+	
+	
+	
+	//Click FAQs Option
+		@Step
+		public void click_faqs_option() {
+			
+			$(By.xpath("(//a[text()='FAQs'])[1]")).click();
+		    
+		}
 
+		//Validate FAQs page
+		@Step
+		public void validate_faqs_page() {
+			
+			boolean displayed = $(By.xpath("//h1[contains(text(),'Frequently Asked Questions')]")).isDisplayed();
+			Assert.assertTrue(displayed);
+		    
+		}
+
+		//Click General capital increase FAQs
+		@Step
+		public void click_general_capital_increase_faqs() {
+			
+			$(By.xpath("//a[contains(text(),'General Capital Increase')]")).click();
+		    
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

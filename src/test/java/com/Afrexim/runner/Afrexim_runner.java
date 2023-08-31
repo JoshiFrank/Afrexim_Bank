@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberSerenityRunner;
 
 @RunWith(CucumberSerenityRunner.class)
-@CucumberOptions(features = "src/test/resources/Afrexim_features",glue= {"com/Afrexim/steps"},tags = "@New")
+@CucumberOptions(features = "src/test/resources/Afrexim_features",glue= {"com/Afrexim/steps"},tags = "@regression")
 
 
 public class Afrexim_runner {

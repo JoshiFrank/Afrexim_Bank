@@ -1,5 +1,8 @@
 package com.Afrexim.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Iterator;
 import java.util.List;
 
@@ -121,10 +124,16 @@ public class Afrexim_Media_pages extends PageObject {
 
 	// To click twenty-twenty two year
 	@Step
-	public void click_twentytwentytwoyear() throws InterruptedException {
+	public void click_twentytwentytwoyear() throws InterruptedException, AWTException {
 
+
+		Robot r = new Robot();
+
+		r.keyPress(KeyEvent.VK_PAGE_UP);
+		r.keyRelease(KeyEvent.VK_PAGE_UP);
 		
-		$(By.xpath("//a[text()='2022']")).click();
+		Thread.sleep(3000);
+		$(By.xpath("//div/a[@rel='2022']")).click();
 	}
 
 	// Validate twenty-twenty two news results
@@ -215,7 +224,14 @@ public class Afrexim_Media_pages extends PageObject {
 
 	// To click twenty-eighteen year
 	@Step
-	public void click_twentyeighteen_year() {
+	public void click_twentyeighteen_year() throws AWTException {
+		
+
+		Robot r = new Robot();
+
+		r.keyPress(KeyEvent.VK_PAGE_UP);
+		r.keyRelease(KeyEvent.VK_PAGE_UP);
+		
 		$(By.xpath("//a[text()='2018']")).click();
 	}
 
